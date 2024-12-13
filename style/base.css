@@ -71,6 +71,28 @@ body.active {
     --switcher--: #c0c0c0;
 }
 
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        --background--: #fefefe;
+        --color--: #000;
+        --pColor--: #212121;
+        --black--: #000;
+        --links-layer--: #ddd;
+        --switcher--: #c0c0c0;
+    }
+    /* Override dark mode with light mode styles if the user decides to swap */
+    body.active {
+        --width--: 1280px;
+        --background--: #212121;
+        --color--: #fff;
+        --pColor--: #d7d7d7;
+        --black--: #000;
+        --links-layer--: #111;
+        --switcher--: #525252;
+    }
+}
+
 p {
     font-size: 16px;
     color: var(--pColor--);
