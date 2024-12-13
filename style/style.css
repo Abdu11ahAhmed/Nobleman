@@ -1,6 +1,7 @@
 .section1 {
   width: 1500px;
   margin: 0 auto;
+  overflow: visible;
 }
 .section1 .upper-text {
   min-height: 600px;
@@ -26,6 +27,7 @@
   height: 761px;
   display: flex;
   align-items: center;
+  overflow: visible;
 }
 .section1 .content .image {
   position: absolute;
@@ -50,6 +52,7 @@ body .section1 .content .text {
   padding: 0 0 0 100px;
   background: #2121214d;
   backdrop-filter: blur(50px);
+  box-shadow: 0 0 50px var(--black--);
 }
 body.active .section1 .content .text {
   background: #ffffff65;
