@@ -1,0 +1,66 @@
+.section1 {
+  width: 1500px;
+  margin: 0 auto;
+}
+.section1 .upper-text {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.section1 .upper-text h1 {
+  font-family: graphire;
+  font-size: 5em;
+  line-height: 100%;
+  overflow: visible;
+}
+.section1 .upper-text h1 span {
+  font-family: graphire;
+  font-size: 1em;
+  line-height: 100%;
+  overflow: visible;
+}
+.section1 .content {
+  position: relative;
+  height: 761px;
+  display: flex;
+  align-items: center;
+}
+.section1 .content .image {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .content .image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+body .section1 .content .text {
+  height: 450px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 0 100px;
+  background: #2121214d;
+  backdrop-filter: blur(50px);
+}
+body.active .section1 .content .text {
+  background: #ffffff65;
+}
+.section1 .content .text h1 {
+  font-family: legquinne;
+  line-height: 120%;
+  font-size: 4em;
+  overflow: visible;
+}
+.section1 .content .text a {
+  margin: 20px 0 0 2px;
+  text-decoration: underline;
+}
