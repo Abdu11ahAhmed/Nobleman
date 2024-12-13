@@ -250,7 +250,7 @@ nav .links .social li a {
     font-size: 20px;
 }
 nav .links .social li a::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -282,7 +282,7 @@ nav .links .main li a {
     padding: 0 3px 0 0;
 }
 nav .links .main li a::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -298,11 +298,11 @@ nav .links .touch {
     position: absolute;
     bottom: 100px;
 }
-nav .links .touch a{
+nav .links .touch a {
     position: relative;
 }
 nav .links .touch a::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
