@@ -1,3 +1,4 @@
+/* section1 */
 .section1 {
   width: 1500px;
   margin: 0 auto;
@@ -59,24 +60,49 @@ body .section1 .content .text {
   box-shadow: 0 0 50px var(--black--);
 }
 body.active .section1 .content .text {
-  background: #ffffff65;
+  background: #c3c3c365;
   box-shadow: 0 0 50px #0000003a;
 }
 body .section1 .content .text h1 {
   font-family: legquinne;
   line-height: 120%;
   font-size: 4em;
-  color: var(--color--);
   overflow: visible;
 }
-body.active .section1 .content .text h1 {
-  color: #233435;
+.section1 .slider {
+  width: 100%;
+  mask-image: linear-gradient(to right, #0000, #000 10% 80%, #0000);
 }
-body .section1 .content .text a {
-  margin: 20px 0 0 2px;
-  text-decoration: underline;
+.section1 .slider .one {
+  min-height: 300px;
+  min-width: 453%;
+  width: 516%;
+  max-width: 516%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.section1 .slider .one p {
+  overflow: hidden;
+  transform: translateX(0%);
+  white-space: nowrap;
+  -webkit-text-stroke: 1px var(--background--);
+  animation: slider 10s infinite linear;
+}
+.section1 .slider .one p span {
   color: var(--color--);
+  font-family: graphire;
+  font-size: 5em;
+  margin: 0 50px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.5s color;
 }
-body.active .section1 .content .text a {
-  color: #233435;
+@keyframes slider {
+  to {
+    transform: translateX(-100%);
+  }
 }
+
+/* section1 */
