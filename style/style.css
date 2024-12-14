@@ -86,11 +86,10 @@ body .section1 .content .text h1 {
   overflow: hidden;
   transform: translateX(0%);
   white-space: nowrap;
-  -webkit-text-stroke: 1px var(--background--);
   animation: slider 10s infinite linear;
 }
 .section1 .slider .one p span {
-  color: var(--color--);
+  color: var(--pcolor--);
   font-family: graphire;
   font-size: 5em;
   margin: 0 50px 0 0;
