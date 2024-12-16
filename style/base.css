@@ -254,7 +254,7 @@ nav .links.active::before {
 nav .links .social {
   height: 80%;
   width: 200px;
-  padding: 270px 0 0 0;
+  padding-top: 21vh;
   overflow: visible;
 }
 nav .links .social li {
@@ -286,7 +286,7 @@ nav .links .social li a:hover:before {
 
 nav .links .main {
   height: 80%;
-  padding: 270px 10px 0 0;
+  padding-top: 21vh;
   margin: 0 0 0 100px;
   overflow: visible;
 }
