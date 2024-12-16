@@ -116,6 +116,9 @@ span {
 /* Colors & Sizes */
 
 /* navigation bar  */
+nav * {
+  border: 1px solid black;
+}
 nav {
   position: relative;
   height: 120px;
@@ -125,6 +128,7 @@ nav {
   justify-content: space-between;
   padding: 0 100px;
   z-index: 1;
+  border: 1px solid black;
 }
 nav .logo {
   font-family: tiny;
@@ -283,7 +287,6 @@ nav .links .social li a::before {
 nav .links .social li a:hover:before {
   width: 100%;
 }
-
 nav .links .main {
   height: 80%;
   padding-top: 21vh;
@@ -334,6 +337,119 @@ nav .links .touch a::before {
 }
 nav .links .touch a:hover:before {
   width: 100%;
+}
+
+@media screen and (max-width: 2170px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 2000px) {
+  nav .links .main li a {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  nav .links .social {
+    width: 100px;
+  }
+  nav .links .social li p {
+    padding: 10px 0;
+  }
+  nav .links .social li a {
+    font-size: 16px;
+  }
+  nav .links .main li p {
+    padding: 15px 0;
+  }
+  nav .links .main li a {
+    font-size: 45px;
+  }
+}
+@media screen and (max-height: 1200px) {
+  nav .links .social,
+  nav .links .main {
+    padding-top: 17vh;
+  }
+  nav .links .main li a {
+    font-size: 50px;
+  }
+}
+@media screen and (max-height: 1080px) {
+  nav {
+    height: 90px;
+  }
+  nav .links .social,
+  nav .links .main {
+    padding-top: 15vh;
+  }
+}
+@media screen and (max-width: 1680px) {
+  nav .links .social {
+    width: 100px;
+  }
+  nav .links .social li p {
+    padding: 10px 0;
+  }
+  nav .links .social li a {
+    font-size: 16px;
+  }
+  nav .links .main li p {
+    padding: 15px 0;
+  }
+  nav .links .main li a {
+    font-size: 45px;
+  }
+}
+@media screen and (max-height: 800px), screen and (max-width: 1680px) {
+  nav .links {
+    padding: 100px 0 100px 80px;
+  }
+  nav .links .social,
+  nav .links .main {
+    padding-top: 11vh;
+  }
+  nav .links .main {
+    margin: 0 0 0 80px;
+  }
+  nav .links .main li a {
+    font-size: 40px;
+  }
+  nav .links .touch {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+@media screen and (max-height: 800px) {
+  nav .links {
+    padding: 100px 0 100px 80px;
+  }
+  nav .links .social,
+  nav .links .main {
+    padding-top: 11vh;
+  }
+  nav .links .main {
+    margin: 0 0 0 80px;
+  }
+  nav .links .main li a {
+    font-size: 40px;
+  }
+  nav .links .touch {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  nav .links {
+    padding: 100px 0 100px 80px;
+  }
+  nav .links .main li p {
+    padding: 15px 0;
+  }
+  nav .links .main li a {
+    font-size: 40px;
+  }
 }
 /* navigation bar  */
 
