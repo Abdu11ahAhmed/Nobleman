@@ -340,7 +340,7 @@ nav .links .touch a:hover:before {
 /* container  */
 .container {
   margin: 0 auto;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
   width: var(--width--);
 }
 /* container  */

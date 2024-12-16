@@ -103,5 +103,59 @@ body .section1 .content .text h1 {
     transform: translateX(-100%);
   }
 }
-
 /* section1 */
+
+/* section2 */
+header {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header h2 {
+  color: #fff;
+  font-size: 3em;
+  line-height: 120%;
+  font-family: graphire;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+.section2 {
+  width: 100%;
+}
+.section2 header h2 {
+  text-align: center;
+}
+.section2 .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section2 .content .feature {
+  border: 1px solid #111;
+  border-radius: 10px;
+  margin: 20px;
+  min-height: 300px;
+  max-height: 423px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 100px 20px;
+}
+.section2 .content .feature img {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+.section2 .content .feature h3 {
+  font-weight: 100;
+  padding: 20px 0;
+  overflow: visible;
+}
+.section2 .content .feature p {
+  overflow: visible;
+}
+/* section2 */
