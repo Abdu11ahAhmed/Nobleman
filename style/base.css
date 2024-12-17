@@ -235,7 +235,7 @@ nav .links .social {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 0 52px 0;
+  padding: 0 0 65px 0;
   overflow: visible;
 }
 nav .links .social li p {
@@ -328,40 +328,11 @@ nav .links .touch a:hover:before {
     width: 40%;
   }
   nav .links .social {
-    padding: 0 0 14px 0;
+    padding: 0 0 34px 0;
     width: 100px;
   }
   nav .links .main li a {
     font-size: 50px;
-  }
-}
-@media screen and (max-width: 1920px) /*, screen and (min-height: 1440px) */ {
-  nav .links {
-    right: -50%;
-    width: 50%;
-  }
-  nav .links .social {
-    padding: 0 0 14px 0;
-    width: 100px;
-  }
-  nav .links .main li a {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 1920px) /*, screen and (min-height: 1200px) */ {
-  nav .links {
-    right: -40%;
-    width: 40%;
-  }
-  nav .links .social {
-    padding: 0 0 14px 0;
-    width: 100px;
-  }
-  nav .links .social li a {
-    font-size: 16px;
-  }
-  nav .links .main li a {
-    font-size: 44px;
   }
 }
 @media screen and (max-width: 1920px) /*, screen and (min-height: 1080px) */ {
@@ -370,13 +341,16 @@ nav .links .touch a:hover:before {
     width: 40%;
   }
   nav .links .social {
-    padding: 0 0 14px 0;
+    padding: 0 0 28px 0;
     width: 100px;
   }
   nav .links .social li p {
     padding: 12.5px 0;
     letter-spacing: -0.05em;
     color: gray;
+  }
+  nav .links .social li a {
+    font-size: 16px;
   }
   nav .links .main li p {
     padding: 15px 0;
@@ -390,6 +364,22 @@ nav .links .touch a:hover:before {
     position: absolute;
     bottom: 60px;
     overflow: visible;
+  }
+}
+@media screen and (min-height: 1200px) and (max-width: 1920px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
+  nav .links .social {
+    padding: 0 0 39px 0;
+    width: 100px;
+  }
+  nav .links .social li a {
+    font-size: 20px;
+  }
+  nav .links .main li a {
+    font-size: 45px;
   }
 }
 @media screen and (max-width: 1770px) {
@@ -409,6 +399,9 @@ nav .links .touch a:hover:before {
   }
 }
 @media screen and (max-width: 1280px) {
+  nav .links .social {
+    padding: 0 0 33px 0;
+  }
   nav .links .social li p {
     font-size: 13px;
   }
@@ -469,7 +462,7 @@ nav .links .touch a:hover:before {
     display: none;
   }
   nav .links .main {
-    margin: 0 0 0 00px;
+    margin: 0;
   }
   nav .links .main li a {
     font-size: 30px;
