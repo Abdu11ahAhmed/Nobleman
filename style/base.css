@@ -61,7 +61,6 @@ body {
 
   transition: 0.5s all;
 }
-
 body.active {
   --background--: #fefefe;
   --color--: #000;
@@ -70,27 +69,6 @@ body.active {
   --links-layer--: #ddd;
   --switcher--: #c0c0c0;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  body {
-    --background--: #fefefe;
-    --color--: #000;
-    --pColor--: #212121;
-    --black--: #000;
-    --links-layer--: #ddd;
-    --switcher--: #c0c0c0;
-  }
-  body.active {
-    --width--: 1280px;
-    --background--: #212121;
-    --color--: #fff;
-    --pColor--: #d7d7d7;
-    --black--: #000;
-    --links-layer--: #111;
-    --switcher--: #525252;
-  }
-} */
-
 p {
   font-size: 16px;
   color: var(--pColor--);
@@ -505,118 +483,6 @@ nav .links .touch a:hover:before {
     right: 20px;
   }
 }
-/* @media screen and (max-width: 2170px) {
-  nav .links {
-    right: -45%;
-    width: 45%;
-  }
-}
-@media screen and (max-width: 2000px) {
-  nav .links .main li a {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 1920px) {
-  nav .links .social {
-    width: 100px;
-  }
-  nav .links .social li p {
-    padding: 10px 0;
-  }
-  nav .links .social li a {
-    font-size: 16px;
-  }
-  nav .links .main li p {
-    padding: 15px 0;
-  }
-  nav .links .main li a {
-    font-size: 45px;
-  }
-}
-@media screen and (max-height: 1200px) {
-  nav .links .social,
-  nav .links .main {
-    padding-top: 17vh;
-  }
-  nav .links .main li a {
-    font-size: 50px;
-  }
-}
-@media screen and (max-height: 1080px) {
-  nav {
-    height: 90px;
-  }
-  nav .links .social,
-  nav .links .main {
-    padding-top: 15vh;
-  }
-}
-@media screen and (max-width: 1680px) {
-  nav .links .social {
-    width: 100px;
-  }
-  nav .links .social li p {
-    padding: 10px 0;
-  }
-  nav .links .social li a {
-    font-size: 16px;
-  }
-  nav .links .main li p {
-    padding: 15px 0;
-  }
-  nav .links .main li a {
-    font-size: 45px;
-  }
-}
-@media screen and (max-height: 800px), screen and (max-width: 1680px) {
-  nav .links {
-    padding: 100px 0 100px 80px;
-  }
-  nav .links .social,
-  nav .links .main {
-    padding-top: 11vh;
-  }
-  nav .links .main {
-    margin: 0 0 0 80px;
-  }
-  nav .links .main li a {
-    font-size: 40px;
-  }
-  nav .links .touch {
-    position: absolute;
-    bottom: 50px;
-  }
-}
-@media screen and (max-height: 800px) {
-  nav .links {
-    padding: 100px 0 100px 80px;
-  }
-  nav .links .social,
-  nav .links .main {
-    padding-top: 11vh;
-  }
-  nav .links .main {
-    margin: 0 0 0 80px;
-  }
-  nav .links .main li a {
-    font-size: 40px;
-  }
-  nav .links .touch {
-    position: absolute;
-    bottom: 50px;
-  }
-}
-@media screen and (max-width: 1440px) {
-  nav .links {
-    padding: 100px 0 100px 80px;
-  }
-  nav .links .main li p {
-    padding: 15px 0;
-  }
-  nav .links .main li a {
-    font-size: 40px;
-  }
-} */
 /* navigation bar  */
 
 /* container  */
