@@ -543,6 +543,9 @@ nav .links .touch a:hover:before {
   nav .links .main li a {
     font-size: 30px;
   }
+  nav .links .touch {
+    bottom: 100px;
+  }
 }
 @media screen and (max-width: 430px) {
   nav {
