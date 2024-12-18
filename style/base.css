@@ -389,16 +389,70 @@ nav .links .touch a:hover:before {
   nav .links {
     right: -45%;
     width: 45%;
-    padding: 100px 0 100px 90px;
+    padding: 100px 0 100px 120px;
+  }
+}
+@media screen and (max-height: 1000px) and (max-width: 1770px) {
+  nav .links {
+    right: -42.5%;
+    width: 42.5%;
+  }
+  nav .links .social {
+    padding: 0 0 0px 0;
+    width: 100px;
+  }
+  nav .links .social li a {
+    font-size: 16px;
+  }
+  nav .links .main li a {
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 1540px) {
   nav .links {
-    right: -50%;
-    width: 50%;
+    right: -45%;
+    width: 45%;
+    padding: 100px 0 100px 90px;
+  }
+}
+@media screen and (max-height: 900px) and (max-width: 1440px) {
+  nav .links {
+    right: -40%;
+    width: 40%;
+  }
+  nav .links .main {
+    margin: 0 0 0 50px;
+  }
+  nav .links .main li a {
+    font-size: 35px;
+  }
+}
+@media screen and (max-height: 770px) and (max-width: 1370px) {
+  nav .links {
+    right: -40%;
+    width: 40%;
+    padding: 100px 0 100px 59px;
+  }
+  nav .links .social {
+    padding: 0 0 29px 0;
+    width: 100px;
+  }
+  nav .links .social li a {
+    padding: 0;
+  }
+
+  nav .links .main {
+    margin: 0 0 0 50px;
+  }
+  nav .links .main li a {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1280px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
   nav .links .social {
     padding: 0 0 33px 0;
   }
@@ -421,8 +475,30 @@ nav .links .touch a:hover:before {
     font-size: 13px;
   }
 }
-@media screen and (max-width: 1110px) {
+@media screen and (max-height: 1030px) and (max-width: 1280px) {
   nav .links {
+    right: -45%;
+    width: 45%;
+    padding: 100px 0 100px 80px;
+  }
+  nav .links .social {
+    padding: 0 0 32px 0;
+    width: 100px;
+  }
+  nav .links .social li a {
+    padding: 0;
+  }
+  nav .links .main {
+    margin: 0 0 0 55px;
+  }
+  nav .links .main li a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  nav .links {
+    right: -50%;
+    width: 50%;
     padding: 100px 0 100px 60px;
   }
 }
