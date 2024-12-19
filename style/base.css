@@ -434,15 +434,20 @@ nav .links .touch a:hover:before {
     padding: 100px 0 100px 59px;
   }
   nav .links .social {
-    padding: 0 0 29px 0;
+    padding: 0 0 33px 0;
     width: 100px;
+  }
+  nav .links .social li p{
+    font-size: 12px;
   }
   nav .links .social li a {
     padding: 0;
   }
-
   nav .links .main {
     margin: 0 0 0 50px;
+  }
+  nav .links .main li p{
+    font-size: 12px;
   }
   nav .links .main li a {
     font-size: 30px;
