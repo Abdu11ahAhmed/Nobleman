@@ -94,6 +94,9 @@ span {
 /* Colors & Sizes */
 
 /* navigation bar  */
+/* nav * {
+  border: 1px solid black;
+} */
 nav {
   position: relative;
   height: 120px;
@@ -103,6 +106,7 @@ nav {
   justify-content: space-between;
   padding: 0 100px;
   z-index: 1;
+  border: 1px solid black;
 }
 nav .logo {
   font-family: tiny;
@@ -203,7 +207,7 @@ nav .links {
   height: 100vh;
   width: 40%;
   background: var(--background--);
-  padding: 100px 0 100px 120px;
+  padding: 50px 0 100px 7vw;
   display: flex;
   transition: 0.5s background, 1s right cubic-bezier(0.075, 0.82, 0.165, 1);
   overflow: hidden;
@@ -230,27 +234,30 @@ nav .links.active::before {
   transition-delay: 0.2s;
 }
 nav .links .social {
-  height: 80%;
-  width: 200px;
+  height: 100%;
+  width: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 0 65px 0;
   overflow: visible;
 }
-nav .links .social li p {
+nav .links .social .social-content {
+  transform: translateY(-10%);
+  height: 443px;
+}
+nav .links .social .social-content li p {
   padding: 30px 0;
   letter-spacing: -0.05em;
   color: gray;
 }
-nav .links .social li a {
+nav .links .social .social-content li a {
   position: relative;
   letter-spacing: -0.05em;
   font-size: 20px;
   display: inline-flex;
   padding: 5px 0;
 }
-nav .links .social li a::before {
+nav .links .social .social-content li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -260,26 +267,29 @@ nav .links .social li a::before {
   background: var(--color--);
   transition: 1s width cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-nav .links .social li a:hover:before {
+nav .links .social .social-content li a:hover:before {
   width: 100%;
 }
-nav .links .main {
-  height: 80%;
+nav .links .main{
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 0 0 100px;
+  margin-left: 6vw;
   overflow: visible;
 }
-nav .links .main li p {
+nav .links .main .main-content{
+  transform: translateY(-10%);
+}
+nav .links .main .main-content li p {
   padding: 30px 0;
   letter-spacing: -0.05em;
   color: gray;
 }
-nav .links .main li {
+nav .links .main .main-content li {
   overflow: visible;
 }
-nav .links .main li a {
+nav .links .main .main-content li a {
   position: relative;
   letter-spacing: -0.05em;
   font-size: 55px;
@@ -287,7 +297,7 @@ nav .links .main li a {
   padding: 0 3px 0 0;
   overflow: visible;
 }
-nav .links .main li a::before {
+nav .links .main .main-content li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -297,7 +307,7 @@ nav .links .main li a::before {
   background: var(--color--);
   transition: 1s width cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-nav .links .main li a:hover:before {
+nav .links .main .main-content li a:hover:before {
   width: 100%;
 }
 nav .links .touch {
@@ -322,42 +332,42 @@ nav .links .touch a:hover:before {
   width: 100%;
 }
 
-@media screen and (max-width: 2250px) {
+/* @media screen and (max-width: 2250px) {
   nav .links {
     right: -40%;
     width: 40%;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 34px 0;
     width: 100px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 1920px) /*, screen and (min-height: 1080px) */ {
+@media screen and (max-width: 1920px) {
   nav .links {
     right: -40%;
     width: 40%;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 28px 0;
     width: 100px;
   }
-  nav .links .social li p {
+  nav .links .social .social-content li p {
     padding: 12.5px 0;
     letter-spacing: -0.05em;
     color: gray;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     font-size: 16px;
   }
-  nav .links .main li p {
+  nav .links .main .main-content li p {
     padding: 15px 0;
     letter-spacing: -0.05em;
     color: gray;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 40px;
   }
   nav .links .touch {
@@ -371,14 +381,14 @@ nav .links .touch a:hover:before {
     right: -45%;
     width: 45%;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 39px 0;
     width: 100px;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     font-size: 20px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 45px;
   }
 }
@@ -397,14 +407,14 @@ nav .links .touch a:hover:before {
     right: -42.5%;
     width: 42.5%;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 0px 0;
     width: 100px;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     font-size: 16px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 35px;
   }
 }
@@ -420,10 +430,10 @@ nav .links .touch a:hover:before {
     right: -40%;
     width: 40%;
   }
-  nav .links .main {
+  nav .links .main .main-content {
     margin: 0 0 0 50px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 35px;
   }
 }
@@ -433,23 +443,23 @@ nav .links .touch a:hover:before {
     width: 40%;
     padding: 100px 0 100px 59px;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 33px 0;
     width: 100px;
   }
-  nav .links .social li p{
+  nav .links .social .social-content li p {
     font-size: 12px;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     padding: 0;
   }
-  nav .links .main {
+  nav .links .main .main-content {
     margin: 0 0 0 50px;
   }
-  nav .links .main li p{
+  nav .links .main .main-content li p {
     font-size: 12px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 30px;
   }
 }
@@ -458,22 +468,22 @@ nav .links .touch a:hover:before {
     right: -45%;
     width: 45%;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 33px 0;
   }
-  nav .links .social li p {
+  nav .links .social .social-content li p {
     font-size: 13px;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     padding: 2.5px 0;
   }
-  nav .links .main {
+  nav .links .main .main-content {
     margin: 0 0 0 70px;
   }
-  nav .links .main li p {
+  nav .links .main .main-content li p {
     font-size: 13px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 35px;
   }
   nav .links .touch p {
@@ -486,18 +496,25 @@ nav .links .touch a:hover:before {
     width: 45%;
     padding: 100px 0 100px 80px;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     padding: 0 0 32px 0;
     width: 100px;
   }
-  nav .links .social li a {
+  nav .links .social .social-content li a {
     padding: 0;
   }
-  nav .links .main {
+  nav .links .main .main-content {
     margin: 0 0 0 55px;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 30px;
+  }
+@media screen and (max-height: 800px) and (max-width: 1280px) {
+  nav .links .social .social-content li p {
+    font-size: 12px;
+  }
+  nav .links .main .main-content li p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1210px) {
@@ -539,13 +556,13 @@ nav .links .touch a:hover:before {
     width: 100%;
     padding: 100px 0 100px 60px;
   }
-  nav .links .social {
+  nav .links .social .social-content {
     display: none;
   }
-  nav .links .main {
+  nav .links .main .main-content {
     margin: 0;
   }
-  nav .links .main li a {
+  nav .links .main .main-content li a {
     font-size: 30px;
   }
   nav .links .touch {
@@ -559,7 +576,7 @@ nav .links .touch a:hover:before {
   nav .right .humberger {
     right: 20px;
   }
-}
+} */
 /* navigation bar  */
 
 /* container  */
