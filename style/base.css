@@ -332,6 +332,33 @@ nav .links .touch a:hover:before {
   width: 100%;
 }
 
+
+@media screen and (min-width: 2570px) {
+  body{
+    background:red;
+  }
+  .links.active{
+    right: -34%;
+    width: 34%;
+    padding: 50px 0 100px 150px;
+  }
+  nav .links .main {
+    margin-left: 150px;
+}
+}
+@media screen and (min-width: 2800px) {
+  body{
+    background:red;
+  }
+  .links.active{
+    right: -30%;
+    width: 30%;
+    padding: 50px 0 100px 150px;
+  }
+  nav .links .main {
+    margin-left: 150px;
+}
+}
 /* @media screen and (max-width: 2250px) {
   nav .links {
     right: -40%;
