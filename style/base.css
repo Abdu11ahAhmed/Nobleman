@@ -270,7 +270,7 @@ nav .links .social .social-content li a::before {
 nav .links .social .social-content li a:hover:before {
   width: 100%;
 }
-nav .links .main{
+nav .links .main {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -278,7 +278,7 @@ nav .links .main{
   margin-left: 6vw;
   overflow: visible;
 }
-nav .links .main .main-content{
+nav .links .main .main-content {
   transform: translateY(-10%);
 }
 nav .links .main .main-content li p {
@@ -332,44 +332,42 @@ nav .links .touch a:hover:before {
   width: 100%;
 }
 
-
 @media screen and (min-width: 2570px) {
-  body{
-    background:red;
+  body {
+    background: red;
   }
-  .links.active{
+  .links.active {
     right: -34%;
     width: 34%;
     padding: 50px 0 100px 150px;
   }
   nav .links .main {
     margin-left: 150px;
-}
+  }
 }
 @media screen and (min-width: 2800px) {
-  body{
-    background:red;
+  body {
+    background: red;
   }
-  .links.active{
+  .links.active {
     right: -30%;
     width: 30%;
     padding: 50px 0 100px 150px;
   }
   nav .links .main {
     margin-left: 150px;
+  }
 }
-}
-/* @media screen and (max-width: 2250px) {
+@media screen and (max-width: 2200px) {
   nav .links {
-    right: -40%;
-    width: 40%;
+    right: -44%;
+    width: 44%;
   }
-  nav .links .social .social-content {
-    padding: 0 0 34px 0;
-    width: 100px;
-  }
-  nav .links .main .main-content li a {
-    font-size: 50px;
+}
+@media screen and (max-width: 1920px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 1920px) {
@@ -378,29 +376,145 @@ nav .links .touch a:hover:before {
     width: 40%;
   }
   nav .links .social .social-content {
-    padding: 0 0 28px 0;
-    width: 100px;
-  }
-  nav .links .social .social-content li p {
-    padding: 12.5px 0;
-    letter-spacing: -0.05em;
-    color: gray;
+    height: 341px;
   }
   nav .links .social .social-content li a {
     font-size: 16px;
-  }
-  nav .links .main .main-content li p {
-    padding: 15px 0;
-    letter-spacing: -0.05em;
-    color: gray;
+    padding: 2.5px 0;
   }
   nav .links .main .main-content li a {
     font-size: 40px;
   }
+}
+@media screen and (max-width: 1650px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
+  nav .links .social .social-content {
+    height: 341px;
+  }
+  nav .links .social .social-content li a {
+    font-size: 16px;
+    padding: 2.5px 0;
+  }
+  nav .links .main .main-content li a {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+    padding: 50px 0 100px 8vw;
+  }
+  nav .links .social .social-content {
+    height: 341px;
+  }
+  nav .links .social .social-content li a {
+    font-size: 16px;
+    padding: 2.5px 0;
+  }
+  nav .links .main .main-content li a {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  nav {
+    height: 90px;
+  }
+  nav .links {
+    right: -45%;
+    width: 45%;
+    padding: 50px 0 100px 8vw;
+  }
+  nav .links .social .social-content {
+    height: 286px;
+  }
+  nav .links .main .main-content li a {
+    font-size: 37px;
+  }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p {
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 1366px) {
+  nav {
+    height: 70px;
+  }
+  nav .links {
+    right: -40%;
+    width: 40%;
+    padding: 50px 0 100px 7vw;
+  }
+  nav .links .social .social-content {
+    height: 236px;
+  }
+  nav .links .main {
+    margin-left: 4vw;
+  }
+  nav .links .main .main-content li a {
+    font-size: 30px;
+  }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p,
+  .touch p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
   nav .links .touch {
     position: absolute;
-    bottom: 60px;
+    bottom: 50px;
     overflow: visible;
+  }
+  .touch p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 70px;
+  }
+  nav .links {
+    right: -46%;
+    width: 46%;
+    padding: 50px 0 100px 7vw;
+  }
+  nav .links .social .social-content {
+    height: 236px;
+  }
+  nav .links .main {
+    margin-left: 4vw;
+  }
+  nav .links .main .main-content li a {
+    font-size: 30px;
+  }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p,
+  .touch p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  nav .links .touch {
+    position: absolute;
+    bottom: 50px;
+    overflow: visible;
+  }
+  .touch p {
+    padding: 0;
+  }
+}
+@media screen and (min-height: 1440px) and (max-width: 1920px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
+  nav .links .social .social-content {
+    height: 411px;
+  }
+  nav .links .main .main-content li a {
+    font-size: 50px;
   }
 }
 @media screen and (min-height: 1200px) and (max-width: 1920px) {
@@ -409,201 +523,146 @@ nav .links .touch a:hover:before {
     width: 45%;
   }
   nav .links .social .social-content {
-    padding: 0 0 39px 0;
-    width: 100px;
-  }
-  nav .links .social .social-content li a {
-    font-size: 20px;
+    height: 411px;
   }
   nav .links .main .main-content li a {
-    font-size: 45px;
+    font-size: 50px;
   }
 }
-@media screen and (max-width: 1770px) {
-  nav {
-    height: 100px;
-  }
+@media screen and (min-height: 1080px) and (max-width: 1920px) {
   nav .links {
-    right: -45%;
-    width: 45%;
-    padding: 100px 0 100px 120px;
-  }
-}
-@media screen and (max-height: 1000px) and (max-width: 1770px) {
-  nav .links {
-    right: -42.5%;
-    width: 42.5%;
+    right: -40%;
+    width: 40%;
   }
   nav .links .social .social-content {
-    padding: 0 0 0px 0;
-    width: 100px;
+    height: 341px;
   }
   nav .links .social .social-content li a {
     font-size: 16px;
-  }
-  nav .links .main .main-content li a {
-    font-size: 35px;
-  }
-}
-@media screen and (max-width: 1540px) {
-  nav .links {
-    right: -45%;
-    width: 45%;
-    padding: 100px 0 100px 90px;
-  }
-}
-@media screen and (max-height: 900px) and (max-width: 1440px) {
-  nav .links {
-    right: -40%;
-    width: 40%;
-  }
-  nav .links .main .main-content {
-    margin: 0 0 0 50px;
-  }
-  nav .links .main .main-content li a {
-    font-size: 35px;
-  }
-}
-@media screen and (max-height: 770px) and (max-width: 1370px) {
-  nav .links {
-    right: -40%;
-    width: 40%;
-    padding: 100px 0 100px 59px;
-  }
-  nav .links .social .social-content {
-    padding: 0 0 33px 0;
-    width: 100px;
-  }
-  nav .links .social .social-content li p {
-    font-size: 12px;
-  }
-  nav .links .social .social-content li a {
-    padding: 0;
-  }
-  nav .links .main .main-content {
-    margin: 0 0 0 50px;
-  }
-  nav .links .main .main-content li p {
-    font-size: 12px;
-  }
-  nav .links .main .main-content li a {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 1280px) {
-  nav .links {
-    right: -45%;
-    width: 45%;
-  }
-  nav .links .social .social-content {
-    padding: 0 0 33px 0;
-  }
-  nav .links .social .social-content li p {
-    font-size: 13px;
-  }
-  nav .links .social .social-content li a {
     padding: 2.5px 0;
   }
-  nav .links .main .main-content {
-    margin: 0 0 0 70px;
-  }
-  nav .links .main .main-content li p {
-    font-size: 13px;
-  }
   nav .links .main .main-content li a {
-    font-size: 35px;
-  }
-  nav .links .touch p {
-    font-size: 13px;
+    font-size: 40px;
   }
 }
-@media screen and (max-height: 1030px) and (max-width: 1280px) {
+@media screen and (min-height: 1080px) and (max-width: 1650px) {
   nav .links {
     right: -45%;
     width: 45%;
-    padding: 100px 0 100px 80px;
   }
   nav .links .social .social-content {
-    padding: 0 0 32px 0;
-    width: 100px;
+    height: 341px;
   }
   nav .links .social .social-content li a {
-    padding: 0;
-  }
-  nav .links .main .main-content {
-    margin: 0 0 0 55px;
+    font-size: 16px;
+    padding: 2.5px 0;
   }
   nav .links .main .main-content li a {
-    font-size: 30px;
-  }
-@media screen and (max-height: 800px) and (max-width: 1280px) {
-  nav .links .social .social-content li p {
-    font-size: 12px;
-  }
-  nav .links .main .main-content li p {
-    font-size: 12px;
+    font-size: 40px;
   }
 }
-@media screen and (max-width: 1210px) {
+@media screen and (min-height: 1200px) and (max-width: 1600px) {
+  nav .links {
+    right: -45%;
+    width: 45%;
+  }
+  nav .links .social .social-content {
+    height: 341px;
+  }
+  nav .links .social .social-content li a {
+    font-size: 16px;
+    padding: 2.5px 0;
+  }
+  nav .links .main .main-content li a {
+    font-size: 40px;
+  }
+}
+@media screen and (min-height: 900px) and (max-width: 1440px) {
+  nav {
+    height: 90px;
+  }
   nav .links {
     right: -50%;
     width: 50%;
-    padding: 100px 0 100px 60px;
-  }
-}
-@media screen and (max-width: 900px) {
-  nav {
-    padding: 0 80px;
-  }
-  nav .right .humberger {
-    right: 80px;
-  }
-  nav .links {
-    right: -60%;
-    width: 60%;
-    padding: 100px 0 100px 60px;
-  }
-}
-@media screen and (max-width: 820px) {
-  nav .links {
-    right: -70%;
-    width: 70%;
-    padding: 100px 0 100px 60px;
-  }
-}
-@media screen and (max-width: 740px) {
-  nav {
-    padding: 0 50px;
-  }
-  nav .right .humberger {
-    right: 50px;
-  }
-  nav .links {
-    right: -100%;
-    width: 100%;
-    padding: 100px 0 100px 60px;
+    padding: 50px 0 100px 9vw;
   }
   nav .links .social .social-content {
-    display: none;
+    height: 286px;
   }
-  nav .links .main .main-content {
-    margin: 0;
+  nav .links .main .main-content li a {
+    font-size: 37px;
+  }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p {
+    padding: 10px 0;
+  }
+}
+@media screen and (min-height: 768px) and (max-width: 1366px) {
+  nav {
+    height: 70px;
+  }
+  nav .links {
+    right: -50%;
+    width: 50%;
+    padding: 50px 0 100px 9vw;
+  }
+  nav .links .social .social-content {
+    height: 281px;
+  }
+  nav .links .main {
+    margin-left: 6vw;
+  }
+  nav .links .main .main-content li a {
+    font-size: 37px;
+  }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p,
+  .touch p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  nav .links .touch {
+    position: absolute;
+    bottom: 100px;
+    overflow: visible;
+  }
+  .touch p {
+    padding: 0;
+  }
+}
+@media screen and (min-height: 768px) and (max-width: 1024px) {
+  nav {
+    height: 70px;
+  }
+  nav .links {
+    right: -46%;
+    width: 46%;
+    padding: 50px 0 100px 7vw;
+  }
+  nav .links .social .social-content {
+    height: 236px;
+  }
+  nav .links .main {
+    margin-left: 4vw;
   }
   nav .links .main .main-content li a {
     font-size: 30px;
   }
+  nav .links .social .social-content li p,
+  nav .links .main .main-content li p,
+  .touch p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
   nav .links .touch {
-    bottom: 100px;
+    position: absolute;
+    bottom: 50px;
+    overflow: visible;
+  }
+  .touch p {
+    padding: 0;
   }
 }
-@media screen and (max-width: 430px) {
-  nav {
-    padding: 0 20px;
-  }
-  nav .right .humberger {
-    right: 20px;
-  }
-} */
 /* navigation bar  */
 
 /* container  */
