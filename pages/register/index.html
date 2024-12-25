@@ -3,12 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../images/SVG/Favicon.svg">
+    <link rel="shortcut icon" href="../../images/SVG/Favicon.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="../../style/base.css" />
     <link rel="stylesheet" href="../../style/register/styles.css" />
     <!-- styles -->
     <title>Nobleman | Registration</title>
   </head>
-  <body></body>
+  <body>
+    <div class="reg-content">
+      <!-- nav -->
+      <nav>
+        <a href="../index.html" class="logo">nobleman</a>
+        <div class="right">
+          <div class="light-dark">
+            <div id="switcher">
+              <img src="../../images/SVG/light&dark.svg" alt="light and dark" />
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav -->
+
+      <!-- background -->
+      <svg
+        id="Layer_1"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="2560"
+        height="1440"
+        viewBox="0 0 2560 1440"
+      >
+        <defs>
+          <clipPath id="clip-path">
+            <rect class="cls-1" />
+          </clipPath>
+        </defs>
+        <g class="cls-2">
+          <g>
+            <path
+              class="cls-3"
+              d="M1867.92-297.9,2455.55,719.9,1867.92,1737.69H692.67L105.05,719.9,692.67-297.9H1867.92m.58-1H692.1L103.9,719.9,692.1,1738.69H1868.5L2456.7,719.9,1868.5-298.9Z"
+            />
+            <path
+              class="cls-3"
+              d="M1538.32-243.06l704.93,704.93-258,963-962.95,258L317.34,977.92,575.37,15l963-258m.3-1.11L574.55,14.15,316.23,978.22,1022,1684l964.07-258.33,258.32-964.06L1538.62-244.17Z"
+            />
+            <path
+              class="cls-3"
+              d="M1280.3-83.11,1975.72,318.4v803L1280.3,1522.9,584.88,1121.4v-803L1280.3-83.11m0-1.15L583.88,317.82V1122l696.42,402.08L1976.72,1122V317.82L1280.3-84.26Z"
+            />
+          </g>
+        </g>
+      </svg>
+      <!-- background -->
+
+      <div class="content">
+        <ul class="tabs">
+          <li id="loginTab" class="active">Login</li>
+          <li is="signinTab">Sign in</li>
+        </ul>
+        <form>
+          <div id="loginContent">
+            <label for="email">Please enter email :</label>
+            <input
+            type="email"
+            name="email"
+            id="loginEmail"
+            placeholder="Enter your email"
+            />
+            <label for="password">Please enter password :</label>
+            <input
+              type="password"
+              name="password"
+              id="loginPassword"
+              placeholder="Enter your password"
+            />
+            <ul>
+              <li>
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                <label for="checkbox">Remember me</label>
+              </li>
+              <li>
+                <a href="#">Forgot password?</a>
+              </li>
+            </ul>
+            <button id="loginSubmitBtn">Login</button>
+            <a href="#">Don't have account! Create One</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!-- scripts -->
+  <script src="../../javascript/main.js"></script>
+  <script src="../../javascript/register/main.js"></script>
+  <!-- scripts -->
 </html>
