@@ -60,18 +60,19 @@
       <!-- background -->
 
       <div class="content">
+        <h1>nobleman</h1>
         <ul class="tabs">
-          <li id="loginTab" class="active">Login</li>
-          <li is="signinTab">Sign in</li>
+          <li id="loginTab" class="active" data-cont=".loginContent">Login</li>
+          <li is="signinTab" data-cont=".signContent">Sign in</li>
         </ul>
         <form>
-          <div id="loginContent">
+          <div class="loginContent active">
             <label for="email">Please enter email :</label>
             <input
-            type="email"
-            name="email"
-            id="loginEmail"
-            placeholder="Enter your email"
+              type="email"
+              name="email"
+              id="loginEmail"
+              placeholder="Enter your email"
             />
             <label for="password">Please enter password :</label>
             <input
@@ -91,6 +92,31 @@
             </ul>
             <button id="loginSubmitBtn">Login</button>
             <a href="#">Don't have account! Create One</a>
+          </div>
+          <div class="signContent">
+            <label for="email">Please enter email :</label>
+            <input
+              type="email"
+              name="email"
+              id="signEmail"
+              placeholder="Enter email"
+            />
+            <label for="password">Please enter password :</label>
+            <input
+              type="password"
+              name="password"
+              id="signPassword"
+              placeholder="Enter password"
+            />
+            <label for="confirmPassword">Please confirm password :</label>
+            <input
+              type="password"
+              name="password"
+              id="signPasConf"
+              placeholder="Confirm password"
+            />
+            <a href="#">You alreay have account! Login</a>
+            <button id="signSubmitBtn">Create account</button>
           </div>
         </form>
       </div>

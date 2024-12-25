@@ -1,14 +1,19 @@
 const tabs = document.querySelectorAll(".tabs li");
 const tabsArray = Array.from(tabs);
-const tabContent = document.querySelectorAll(".tab-content");
-const tabContentArray = Array.from(tabContent);
+const tabsContent = document.querySelectorAll("form div");
+const tabsContentArray = Array.from(tabsContent);
 
-tabsArray.forEach((e) => {
-  e.addEventListener("click", () => {
-    tabsArray.forEach((e) => {
-      e.classList.remove("active");
+tabsArray.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    tabsArray.forEach((ele) => {
+      ele.classList.remove("active");
     });
-    e.classList.add("active");
+    e.currentTarget.classList.add("active");
+    tabsContentArray.forEach((div) => {
+      div.classList.remove("active");
+    });
+    document
+      .querySelector(e.currentTarget.dataset.cont)
+      .classList.add("active");
   });
 });
-
