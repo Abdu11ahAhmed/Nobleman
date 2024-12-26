@@ -59,22 +59,25 @@
       </svg>
       <!-- background -->
 
+      <div class="errr">
+        <div class="err">Wrong Email and Password</div>
+        <div class="close"></div>
+      </div>
       <div class="content">
-        <h1>nobleman</h1>
         <ul class="tabs">
           <li id="loginTab" class="active" data-cont=".loginContent">Login</li>
-          <li is="signinTab" data-cont=".signContent">Sign in</li>
+          <li id="signinTab" data-cont=".signContent">Sign in</li>
         </ul>
         <form>
           <div class="loginContent active">
-            <label for="email">Please enter email :</label>
+            <label for="loginEmail">Please enter email :</label>
             <input
               type="email"
               name="email"
               id="loginEmail"
               placeholder="Enter your email"
             />
-            <label for="password">Please enter password :</label>
+            <label for="loginPassword">Please enter password :</label>
             <input
               type="password"
               name="password"
@@ -91,31 +94,51 @@
               </li>
             </ul>
             <button id="loginSubmitBtn">Login</button>
-            <a href="#">Don't have account! Create One</a>
+            <a href="#" id="switchToSign">Don't have account! Create One</a>
           </div>
           <div class="signContent">
-            <label for="email">Please enter email :</label>
+            <ul>
+              <li>
+                <label for="signFName">First name :</label>
+                <input
+                  type="text"
+                  name="fName"
+                  id="signFName"
+                  placeholder="First name"
+                />
+              </li>
+              <li>
+                <label for="signLName">Last name :</label>
+                <input
+                  type="text"
+                  name="lName"
+                  id="signLName"
+                  placeholder="Last name"
+                />
+              </li>
+            </ul>
+            <label for="signEmail">Please enter email :</label>
             <input
               type="email"
               name="email"
               id="signEmail"
               placeholder="Enter email"
             />
-            <label for="password">Please enter password :</label>
+            <label for="signPassword">Please enter password :</label>
             <input
               type="password"
               name="password"
               id="signPassword"
               placeholder="Enter password"
             />
-            <label for="confirmPassword">Please confirm password :</label>
+            <label for="signPasConf">Please confirm password :</label>
             <input
               type="password"
               name="password"
               id="signPasConf"
               placeholder="Confirm password"
             />
-            <a href="#">You alreay have account! Login</a>
+            <a href="#" id="switchToLogin">You alreay have account! Login</a>
             <button id="signSubmitBtn">Create account</button>
           </div>
         </form>
@@ -124,7 +147,6 @@
   </body>
 
   <!-- scripts -->
-  <script src="../../javascript/main.js"></script>
   <script src="../../javascript/register/main.js"></script>
   <!-- scripts -->
 </html>

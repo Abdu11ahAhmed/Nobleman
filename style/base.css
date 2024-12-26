@@ -64,7 +64,7 @@ body {
 body.active {
   --background--: #fefefe;
   --color--: #000;
-  --pColor--: #212121;
+  --pColor--: #383838;
   --black--: #000;
   --links-layer--: #ddd;
   --switcher--: #c0c0c0;

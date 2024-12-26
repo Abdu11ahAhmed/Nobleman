@@ -16,6 +16,7 @@ svg {
   left: 0;
   height: 100vh;
   width: 100%;
+  z-index: -1;
 }
 .cls-1 {
   fill: none;
@@ -37,8 +38,46 @@ svg {
   overflow: hidden;
 }
 
+.errr {
+  position: relative;
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 350px;
+  font-size: 13px;
+  padding: 15px 17px;
+  color: #f00;
+  background: rgba(255, 0, 0, 0.062);
+  transform: translateY(6vh);
+  display: none;
+  user-select: none;
+}
+.errr .close {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-40%);
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.errr .close::before,
+.errr .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  rotate: 45deg;
+  background: red;
+}
+.errr .close::after {
+  rotate: -45deg;
+}
 .content {
-  margin: 10vh auto;
+  margin: 7vh auto;
   height: auto;
   width: 350px;
   padding: 20px;
@@ -46,11 +85,6 @@ svg {
   overflow: visible;
   background: var(--background--);
   transition: 0.5s background;
-}
-.content h1 {
-  font-family: tiny;
-  text-align: center;
-  padding: 30px 0;
 }
 .content .tabs {
   height: 50px;
@@ -80,7 +114,7 @@ svg {
   position: relative;
   height: 100%;
   width: 100%;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .content form div {
   height: 100%;
@@ -97,11 +131,10 @@ svg {
 .content form div label {
   color: var(--color--);
   font-size: 15px;
-  margin: 5px 0;
-  transition: 0.5s background;
+  transition: 0.5s color;
   overflow: visible;
 }
-.content form div input {
+body .content form div input {
   height: 50px;
   width: 100%;
   color: var(--color--);
@@ -111,7 +144,12 @@ svg {
   margin: 5px 0 10px 0;
   padding: 0 20px;
   outline: none;
-  transition: 0.5s background;
+  transition: 0.5s background, 0.5s border;
+}
+body.active .content form div input {
+  border: 1px solid #ddd;
+  background: var(--background--);
+  transition: 0.5s background, 0.5s border;
 }
 .content form div ul {
   width: 100%;
@@ -119,14 +157,17 @@ svg {
   align-items: center;
   justify-content: space-between;
 }
-.content form div ul li input {
+.content form div.loginContent ul li input {
   height: 10px;
   width: 10px;
   transform: translateY(1px);
 }
-.content form div ul li label {
+.content form div.loginContent ul li label {
   font-size: 12px;
   transition: 0.5s background;
+}
+.content form div.signContent ul li {
+  width: 49%;
 }
 .content form div ul li {
   display: inline-block;
@@ -147,6 +188,12 @@ svg {
   margin: 10px 0 0 0;
   cursor: pointer;
   font-size: 15px;
+}
+.content form div button:hover {
+  background: #272727;
+}
+.content form div button:active {
+  background: #000;
 }
 .content form div a {
   width: 100%;
