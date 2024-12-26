@@ -66,12 +66,12 @@ svg {
 }
 .errr .close::before,
 .errr .close::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   width: 100%;
   rotate: 45deg;
-  background: red;
+  background: #f00;
 }
 .errr .close::after {
   rotate: -45deg;

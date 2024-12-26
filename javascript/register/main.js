@@ -71,6 +71,9 @@ loginSubmitBtn.onclick = function (e) {
   } else if (!isValidEmail(logEmail)) {
     errrMessage.style.display = "flex";
     errMessage.innerHTML = `invalid Email`;
+  } else {
+    errrMessage.style.display = "none";
+    alert("Valid email address, Thank you");
   }
 
   // to Close err prompt
