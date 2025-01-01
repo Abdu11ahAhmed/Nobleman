@@ -70,7 +70,7 @@ logintBtn.onclick = (e) => {
     errMessage.innerHTML = `Please fill out fields <div class="close"></div>`;
   } else if (!isValidEmail(logEmail)) {
     errrMessage.style.display = "flex";
-    errMessage.innerHTML = `invalid Email`;
+    errMessage.innerHTML = `invalid email`;
   } else {
     errrMessage.style.display = "none";
     alert("Valid email address, Thank you");
@@ -104,13 +104,18 @@ signBtn.onclick = (e) => {
     errMessage.innerHTML = `Please fill out fields <div class="close"></div>`;
   } else if (!isValidEmail(signEmail.value.trim())) {
     errrMessage.style.display = "flex";
-    errMessage.innerHTML = `Please write Email currectly <div class="close"></div>`;
+    errMessage.innerHTML = `Please write email currectly <div class="close"></div>`;
   } else if (signPassword.value !== signPasConf.value) {
     errrMessage.style.display = "flex";
-    errMessage.innerHTML = `password(s) is not matched <div class="close"></div>`;
+    errMessage.innerHTML = `Passwords is not matched <div class="close"></div>`;
   } else {
     errrMessage.style.display = "none";
-    alert("Thanks for joining to us, Have a good day");
+    alert(
+      "Thanks for joining to us, Have a good day MR." +
+        signFName +
+        " " +
+        signLName
+    );
   }
 };
 
