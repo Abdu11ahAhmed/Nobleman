@@ -49,7 +49,10 @@ switchToLogin.addEventListener("click", (e) => {
 
 const loginEmail = document.getElementById("loginEmail");
 const loginPassword = document.getElementById("loginPassword");
-const loginSubmitBtn = document.getElementById("loginSubmitBtn");
+const logintBtn = document.getElementById("loginSubmitBtn");
+const errrMessage = document.querySelector(".errr");
+const errMessage = document.querySelector(".err");
+const closeErr = document.querySelector(".close");
 
 // valid email
 function isValidEmail(email) {
@@ -58,16 +61,13 @@ function isValidEmail(email) {
 }
 // valid email
 
-loginSubmitBtn.onclick = function (e) {
+logintBtn.onclick = (e) => {
   e.preventDefault();
-  const errrMessage = document.querySelector(".errr");
-  const errMessage = document.querySelector(".err");
-  const closeErr = document.querySelector(".close");
   const logEmail = loginEmail.value.trim();
 
   if (logEmail === "" || loginPassword.value === "") {
     errrMessage.style.display = "flex";
-    errMessage.innerHTML = `This can not be empty <div class="close"></div>`;
+    errMessage.innerHTML = `Please fill out fields <div class="close"></div>`;
   } else if (!isValidEmail(logEmail)) {
     errrMessage.style.display = "flex";
     errMessage.innerHTML = `invalid Email`;
@@ -75,14 +75,43 @@ loginSubmitBtn.onclick = function (e) {
     errrMessage.style.display = "none";
     alert("Valid email address, Thank you");
   }
-
-  // to Close err prompt
-  closeErr.onclick = () => {
-    errrMessage.style.display = "none";
-  };
-  // to Close err prompt
 };
 
-console.log(closeErr);
+// to Close err prompt
+closeErr.onclick = () => {
+  errrMessage.style.display = "none";
+};
+// to Close err prompt
+
+const signFName = document.querySelector("#signFName");
+const signLName = document.querySelector("#signLName");
+const signEmail = document.querySelector("#signEmail");
+const signPassword = document.querySelector("#signPassword");
+const signPasConf = document.querySelector("#signPasConf");
+const signBtn = document.querySelector("#signSubmitBtn");
+
+signBtn.onclick = (e) => {
+  e.preventDefault();
+
+  if (
+    signFName.value === "" ||
+    signLName.value === "" ||
+    signEmail.value === "" ||
+    signPassword.value === "" ||
+    signPasConf.value === ""
+  ) {
+    errrMessage.style.display = "flex";
+    errMessage.innerHTML = `Please fill out fields <div class="close"></div>`;
+  } else if (!isValidEmail(signEmail.value.trim())) {
+    errrMessage.style.display = "flex";
+    errMessage.innerHTML = `Please write Email currectly <div class="close"></div>`;
+  } else if (signPassword.value !== signPasConf.value) {
+    errrMessage.style.display = "flex";
+    errMessage.innerHTML = `password(s) is not matched <div class="close"></div>`;
+  } else {
+    errrMessage.style.display = "none";
+    alert("Thanks for joining to us, Have a good day");
+  }
+};
 
 // registration validate
