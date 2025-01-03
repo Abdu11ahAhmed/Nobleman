@@ -70,7 +70,7 @@ logintBtn.onclick = (e) => {
     errMessage.innerHTML = `Please fill out fields <div class="close"></div>`;
   } else if (!isValidEmail(logEmail)) {
     errrMessage.style.display = "flex";
-    errMessage.innerHTML = `invalid email`;
+    errMessage.innerHTML = `Please enter a valid email`;
   } else {
     errrMessage.style.display = "none";
     alert("Valid email address, Thank you");
