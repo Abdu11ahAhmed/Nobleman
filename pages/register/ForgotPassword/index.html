@@ -37,7 +37,7 @@
         <div class="close"></div>
       </div>
       <form>
-        <h3>Account Restoration</h3>
+        <h3 id="pageSign">Account Restoration</h3>
         <label for="email">Please enter email :</label>
         <input
           autocomplete="on"
@@ -46,6 +46,22 @@
           id="email"
           placeholder="Enter your email"
         />
+
+        <div class="reset">
+          <label for="password">New Password :</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your new password"
+          />
+          <label for="PasswordConf">Confirm Password :</label>
+          <input
+            type="password"
+            id="passwordConf"
+            placeholder="Confirm your new password"
+          />
+        </div>
+
         <button id="submitBtn">Get OTP</button>
       </form>
     </div>

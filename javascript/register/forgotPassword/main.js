@@ -53,9 +53,38 @@ submitBtn.addEventListener("click", function (event) {
       } else if (email.value.trim() !== restoreNumber.toString()) {
         errrMessage.style.display = "flex";
         errMessage.innerHTML = `Not currect OTP Code <div class="close"></div>`;
+        document.querySelector("form").reset();
       } else if (email.value.trim() === restoreNumber.toString()) {
         errrMessage.style.display = "none";
-        alert("thanks so much, valid email and correct OTP");
+
+        const pageSign = document.querySelector("#pageSign");
+        pageSign.textContent = "Reset Password";
+        emailLabel.style.display = "none";
+        email.style.display = "none";
+        const reset = document.querySelector(".reset");
+        reset.style.display = "block";
+        submitBtn.textContent = "Save chenges and Login";
+
+        submitBtn.addEventListener("click", function (event) {
+          const password = document.querySelector("#password").value;
+          const passwordConf = document.querySelector("#passwordConf").value;
+
+          if (password === "" || passwordConf === "") {
+            errrMessage.style.display = "flex";
+            errMessage.innerHTML = `Please enter your new password <div class="close"></div>`;
+          } else if (password !== passwordConf) {
+            errrMessage.style.display = "flex";
+            errMessage.innerHTML = `Passwords do not match <div class="close"></div>`;
+          } else {
+            errrMessage.style.display = "none";
+            alert(
+              "thanks so much, valid email, correct OTP, New password saved"
+            );
+            // redirect to the next page
+            window.location.href = "../../../pages/index.html";
+            // redirect to the next page
+          }
+        });
       }
     });
   }
