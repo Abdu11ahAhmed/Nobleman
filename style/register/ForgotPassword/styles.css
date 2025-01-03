@@ -134,6 +134,9 @@ form .reset {
     margin: 5vh 20px;
     width: auto;
   }
+  h3{
+    font-size: 15px;
+  }
   form label {
     font-size: 13px;
   }
@@ -145,6 +148,6 @@ form .reset {
   }
   form button {
     height: 40px;
-    font-size: 13 px;
+    font-size: 13px;
   }
 }
