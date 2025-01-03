@@ -54,6 +54,7 @@ submitBtn.addEventListener("click", function (event) {
         errrMessage.style.display = "flex";
         errMessage.innerHTML = `Not currect OTP Code <div class="close"></div>`;
       } else if (email.value.trim() === restoreNumber.toString()) {
+        errrMessage.style.display = "none";
         alert("thanks so much, valid email and correct OTP");
       }
     });
