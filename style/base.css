@@ -401,6 +401,16 @@ nav .links .touch a:hover:before {
     margin-left: 90px;
   }
 }
+@media screen and (max-height: 1170px) and (max-width: 1670px) {
+  nav .links {
+    right: -750px;
+    width: 750px;
+    padding: 50px 0 100px 120px;
+  }
+  nav .links .main {
+    margin-left: 110px;
+  }
+}
 @media screen and (max-height: 1200px) and (max-width: 1600px) {
   nav .links {
     right: -670px;
@@ -437,6 +447,14 @@ nav .links .touch a:hover:before {
     font-size: 40px;
   }
 }
+@media screen and (max-height: 1024px) and (max-width: 1400px) {
+  nav .links {
+    right: -700px;
+    width: 650px;
+    padding: 50px 0 100px 109px;
+  }
+}
+
 @media screen and (max-height: 992px) and (max-width: 1768px) {
   nav .links {
     right: -630px;
