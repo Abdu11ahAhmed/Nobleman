@@ -128,7 +128,7 @@ nav .right {
   width: 65px;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   overflow: visible;
   user-select: none;
 }
@@ -139,6 +139,7 @@ nav .right .light-dark {
   align-items: center;
   justify-content: center;
   overflow: visible;
+  transform: translateX(-20px);
 }
 nav .right .light-dark #switcher {
   height: 22.5px;
@@ -165,7 +166,7 @@ nav .right .light-dark #switcher.active img {
 }
 nav .right .humberger {
   position: fixed;
-  right: 140px;
+  right: 100px;
   height: 25px;
   width: 25px;
   display: flex;
@@ -344,20 +345,6 @@ nav .links .touch a::before {
 nav .links .touch a:hover:before {
   width: 100%;
 }
-nav {
-  position: relative;
-  border: 1px solid black;
-}
-nav::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 50px;
-  width: 1px;
-  background: red;
-  z-index: 1;
-}
 @media screen and (max-width: 2230px) and (max-height: 1080px) {
   nav .links {
     right: -755px;
@@ -497,16 +484,11 @@ nav::before {
     font-size: 16px;
   }
   nav .right .humberger {
-    right: 80px;
+    right: 40px;
     width: 20px;
   }
   nav .right .light-dark {
-    height: 25px;
-    width: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
+    transform: translateX(-10px);
   }
   nav .right .light-dark #switcher {
     height: 20px;
@@ -538,19 +520,19 @@ nav::before {
     font-size: 30px;
   }
 }
-@media screen and (max-width:1280px) and (max-height:800px) {
+@media screen and (max-width: 1280px) and (max-height: 800px) {
   nav .links {
     right: -530px;
     width: 530px;
     padding: 50px 0 100px 100px;
-}
+  }
 }
 @media screen and (max-width: 580px) {
   nav {
     padding: 0 20px;
   }
   nav .right .humberger {
-    right: 60px;
+    right: 20px;
   }
   nav .links {
     right: -100%;

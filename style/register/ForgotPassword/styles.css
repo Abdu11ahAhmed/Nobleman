@@ -3,9 +3,12 @@ nav .right {
   width: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: visible;
   user-select: none;
+}
+nav .right .light-dark {
+  transform: translateX(0px);
 }
 /* naviation edit  */
 
@@ -18,9 +21,9 @@ nav .right {
 .errr {
   position: relative;
   margin: 0 auto;
-  width: 350px;
-  font-size: 15px;
-  padding: 15px 17px;
+  width: 300px;
+  font-size: 12px;
+  padding: 12px 17px;
   color: #f00;
   background: rgba(255, 0, 0, 0.062);
   transform: translateY(6vh);
@@ -56,32 +59,32 @@ nav .right {
 form {
   margin: 7vh auto;
   height: auto;
-  width: 350px;
+  width: 280px;
   padding: 20px;
   border: 1px solid var(--pColor--);
   overflow: visible;
   background: var(--background--);
   transition: 0.5s background;
 }
-form h3 {
+form h4 {
   text-align: center;
-  padding: 20px 0;
+  padding: 12.5px 0;
 }
 form label {
   color: var(--color--);
-  font-size: 15px;
+  font-size: 12px;
   transition: 0.5s color;
   overflow: visible;
 }
 body form input {
-  height: 50px;
+  height: 35px;
   width: 100%;
   color: var(--color--);
-  font-size: 15px;
+  font-size: 12px;
   border: 1px solid var(--black--);
   background: var(--background--);
-  margin: 5px 0 10px 0;
-  padding: 0 20px;
+  margin: 5px 0 7.510px 0;
+  padding: 0 15px;
   outline: none;
   transition: 0.5s background, 0.5s border;
 }
@@ -91,14 +94,14 @@ body.active form input {
   transition: 0.5s background, 0.5s border;
 }
 form button {
-  height: 50px;
+  height: 35px;
   width: 100%;
   background: #111;
   color: white;
   border: none;
   cursor: pointer;
-  margin: 10px 0 0 0;
-  font-size: 15px;
+  margin: 5px 0 0 0;
+  font-size: 12px;
 }
 form button:hover {
   background: #272727;
@@ -116,38 +119,4 @@ form a {
 
 form .reset {
   display: none;
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 390px) {
-  form {
-    margin: 7vh 20px;
-    width: auto;
-  }
-}
-@media screen and (max-width: 375px) {
-  form {
-    margin: 5vh 20px;
-    width: auto;
-  }
-  h3{
-    font-size: 15px;
-  }
-  form label {
-    font-size: 13px;
-  }
-  body form input {
-    height: 40px;
-    font-size: 13px;
-    margin: 5px 0 10px 0;
-    padding: 0 20px;
-  }
-  form button {
-    height: 40px;
-    font-size: 13px;
-  }
 }

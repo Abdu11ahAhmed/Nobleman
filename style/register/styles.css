@@ -3,9 +3,12 @@ nav .right {
   width: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: visible;
   user-select: none;
+}
+nav .right .light-dark {
+  transform: translateX(0px);
 }
 /* naviation edit  */
 
@@ -39,9 +42,9 @@ svg {
   position: relative;
   border: 1px solid red;
   margin: 0 auto;
-  width: 350px;
-  font-size: 15px;
-  padding: 15px 17px;
+  width: 300px;
+  font-size: 12px;
+  padding: 12px 17px;
   color: #f00;
   background: rgba(255, 0, 0, 0.062);
   transform: translateY(6vh);
@@ -76,7 +79,7 @@ svg {
 .content {
   margin: 7vh auto;
   height: auto;
-  width: 350px;
+  width: 280px;
   padding: 20px;
   border: 1px solid var(--pColor--);
   overflow: visible;
@@ -84,7 +87,7 @@ svg {
   transition: 0.5s background;
 }
 .content .tabs {
-  height: 50px;
+  height: 35px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -100,7 +103,7 @@ svg {
   border: 1px solid var(--color--);
   cursor: pointer;
   user-select: none;
-  font-size: 16px;
+  font-size: 14px;
   transition: 0.5s border, 0.5s opacity;
 }
 .content .tabs li.active {
@@ -127,7 +130,7 @@ svg {
 }
 .content form div label {
   color: var(--color--);
-  font-size: 15px;
+  font-size: 13px;
   transition: 0.5s color;
   overflow: visible;
 }
@@ -136,14 +139,14 @@ svg {
   text-transform: capitalize;
 }
 body .content form div input {
-  height: 50px;
+  height: 35px;
   width: 100%;
   color: var(--color--);
-  font-size: 15px;
+  font-size: 12px;
   border: 1px solid var(--black--);
   background: var(--background--);
-  margin: 5px 0 10px 0;
-  padding: 0 20px;
+  margin: 5px 0 7px 0;
+  padding: 0 15px;
   outline: none;
   transition: 0.5s background, 0.5s border;
 }
@@ -181,14 +184,14 @@ body.active .content form div input {
   margin: 0;
 }
 .content form div button {
-  height: 50px;
+  height: 35px;
   width: 100%;
   background: #111;
   color: white;
   border: none;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 12px;
 }
 .content form div button:hover {
   background: #272727;
@@ -202,39 +205,4 @@ body.active .content form div input {
   text-decoration: underline;
   text-align: center;
   padding: 5px 0px;
-}
-
-@media screen and (max-width: 600px) {
-  nav {
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .content {
-    margin: 7vh 20px;
-    width: auto;
-  }
-}
-@media screen and (max-width: 375px) {
-  .content {
-    margin: 5vh 20px;
-    width: auto;
-  }
-  .content .tabs {
-    height: 40px;
-    font-size: 13px;
-  }
-  .content form div label {
-    font-size: 13px;
-  }
-  body .content form div input {
-    height: 40px;
-    font-size: 13px;
-    margin: 5px 0 10px 0;
-    padding: 0 20px;
-  }
-  .content form div button {
-    height: 40px;
-    font-size: 13 px;
-  }
 }
