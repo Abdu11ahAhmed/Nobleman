@@ -97,9 +97,6 @@ body .section1 .content .text h1 {
   }
 }
 /* section1 */
-
-.container {
-}
 @media screen and (max-width: 1920px) {
   .section1 {
     width: var(--width--);
