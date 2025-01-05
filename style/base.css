@@ -108,7 +108,7 @@ input:-moz-autofill {
 /* navigation bar  */
 nav {
   position: relative;
-  height: 120px;
+  height: 7.5vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -124,23 +124,24 @@ nav .logo {
 }
 nav .right {
   height: 50px;
-  width: 100px;
+  width: 65px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   overflow: visible;
   user-select: none;
 }
 nav .right .light-dark {
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 nav .right .light-dark #switcher {
-  height: 25px;
-  width: 25px;
+  height: 22.5px;
+  width: 22.5px;
   background: var(--switcher--);
   display: flex;
   align-items: center;
@@ -149,8 +150,8 @@ nav .right .light-dark #switcher {
   cursor: pointer;
 }
 nav .right .light-dark #switcher img {
-  height: 15px;
-  width: 15px;
+  height: 12.5px;
+  width: 12.5px;
   transition: 0.5s rotate, 0.5s background;
 }
 nav .right .light-dark #switcher svg {
@@ -163,9 +164,9 @@ nav .right .light-dark #switcher.active img {
 }
 nav .right .humberger {
   position: fixed;
-  right: 100px;
-  height: 50px;
-  width: 50px;
+  right: 140px;
+  height: 25px;
+  width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +178,7 @@ nav .right .humberger::before,
 nav .right .humberger::after {
   content: "";
   height: 2px;
-  width: 50%;
+  width: 100%;
   margin: 2px;
   background: var(--color--);
   transition: 0.5s background, 0.5s transform, 0.5s margin, 0.5s position;
@@ -214,7 +215,7 @@ nav .links {
   height: 100vh;
   right: -950px;
   width: 950px;
-  padding: 50px 0 100px 160px;
+  padding: 50px 0 100px 180px;
   background: var(--background--);
   display: flex;
   transition: 0.5s background, 1s right cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -343,7 +344,7 @@ nav .links .touch a:hover:before {
   width: 100%;
 }
 
-@media screen and (max-width: 1920px) {
+/* @media screen and (max-width: 1920px) {
   nav .links {
     right: -880px;
     width: 880px;
@@ -357,6 +358,9 @@ nav .links .touch a:hover:before {
   }
 }
 @media screen and (max-height: 1080px) and (max-width: 1920px) {
+  nav{
+    height: 90px;
+    }
   nav .links {
     right: -745px;
     width: 745px;
@@ -377,6 +381,9 @@ nav .links .touch a:hover:before {
   }
 }
 @media screen and (max-width: 1730px) {
+  nav{
+    height: 90px;
+    }
   nav .links {
     right: -815px;
     width: 815px;
@@ -454,7 +461,6 @@ nav .links .touch a:hover:before {
     padding: 50px 0 100px 109px;
   }
 }
-
 @media screen and (max-height: 992px) and (max-width: 1768px) {
   nav .links {
     right: -630px;
@@ -465,10 +471,27 @@ nav .links .touch a:hover:before {
     margin-left: 80px;
   }
 }
-
 @media screen and (max-width: 1280px) {
   nav {
     height: 90px;
+    padding: 0 20px;
+  }
+  nav .right {
+    height: 30px;
+    width: 70px;
+  }
+  nav .right .light-dark {
+    height: 30px;
+    width: 30px;
+  }
+  nav .right .humberger {
+    height: 30px;
+    width: 30px;
+    right: 20px;
+  }
+  nav .right .humberger::before,
+  nav .right .humberger::after {
+    width: 85%;
   }
   nav .links {
     right: -570px;
@@ -559,26 +582,6 @@ nav .links .touch a:hover:before {
   }
 }
 @media screen and (max-width: 768px) {
-  nav {
-    padding: 0 40px;
-  }
-  nav .right {
-    height: 30px;
-    width: 70px;
-  }
-  nav .right .light-dark {
-    height: 30px;
-    width: 30px;
-  }
-  nav .right .humberger {
-    height: 30px;
-    width: 30px;
-    right: 40px;
-  }
-  nav .right .humberger::before,
-  nav .right .humberger::after {
-    width: 85%;
-  }
   nav .links {
     right: -550px;
     width: 550px;
@@ -598,12 +601,6 @@ nav .links .touch a:hover:before {
   }
 }
 @media screen and (max-width: 553px) {
-  nav {
-    padding: 0 20px;
-  }
-  nav .right .humberger {
-    right: 20px;
-  }
   nav .links {
     right: -100%;
     width: 100%;
@@ -623,8 +620,7 @@ nav .links .touch a:hover:before {
 @media screen and (max-width: 440px) {
   nav {
     height: 60px;
-    border: 1px solid red;
-    padding: 0 20px;
+      padding: 0 20px;
   }
   nav .logo {
     font-size: 16px;
@@ -651,7 +647,7 @@ nav .links .touch a:hover:before {
   nav .links .touch {
     bottom: 50px;
   }
-}
+} */
 
 /* navigation bar  */
 
@@ -660,5 +656,6 @@ nav .links .touch a:hover:before {
   margin: 0 auto;
   min-height: 100vh;
   width: var(--width--);
+  overflow: visible;
 }
 /* container  */

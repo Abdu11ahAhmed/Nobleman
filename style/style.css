@@ -1,11 +1,9 @@
 /* section1 */
 .section1 {
-  width: 1500px;
-  margin: 0 auto;
   overflow: visible;
 }
 .section1 .upper-text {
-  min-height: 600px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,19 +11,13 @@
 }
 .section1 .upper-text h1 {
   font-family: graphire;
-  font-size: 5em;
-  line-height: 100%;
-  overflow: visible;
-}
-.section1 .upper-text h1 span {
-  font-family: graphire;
-  font-size: 1em;
+  font-size: 4em;
   line-height: 100%;
   overflow: visible;
 }
 .section1 .content {
   position: relative;
-  height: 761px;
+  height: 648px;
   display: flex;
   align-items: center;
   overflow: visible;
@@ -49,12 +41,12 @@ body.active .section1 .content .image {
   object-fit: cover;
 }
 body .section1 .content .text {
-  height: 450px;
-  width: 600px;
+  height: 300px;
+  width: 450px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 80px;
   background: #2121214d;
   backdrop-filter: blur(50px);
   box-shadow: 0 0 50px var(--black--);
@@ -66,7 +58,7 @@ body.active .section1 .content .text {
 body .section1 .content .text h1 {
   font-family: legquinne;
   line-height: 120%;
-  font-size: 4em;
+  font-size: 3em;
   overflow: visible;
 }
 .section1 .slider {
@@ -74,7 +66,7 @@ body .section1 .content .text h1 {
   mask-image: linear-gradient(to right, #0000, #000 10% 80%, #0000);
 }
 .section1 .slider .one {
-  min-height: 300px;
+  min-height: 150px;
   min-width: 453%;
   width: 516%;
   max-width: 516%;
@@ -90,8 +82,9 @@ body .section1 .content .text h1 {
 }
 .section1 .slider .one p span {
   color: var(--pcolor--);
-  font-family: graphire;
-  font-size: 5em;
+  font-family: averta;
+  letter-spacing: -0.05em;
+  font-size: 3em;
   margin: 0 50px 0 0;
   overflow: hidden;
   white-space: nowrap;
@@ -104,6 +97,200 @@ body .section1 .content .text h1 {
   }
 }
 /* section1 */
+
+.container {
+}
+@media screen and (max-width: 1920px) {
+  .section1 {
+    width: var(--width--);
+  }
+  .section1 .upper-text {
+    min-height: 420px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 4.2em;
+  }
+  .section1 .content {
+    height: 648px;
+  }
+  body .section1 .content .text {
+    height: 350px;
+    width: 480px;
+    padding: 0 0 0 60px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 3em;
+  }
+  .section1 .slider .one {
+    min-height: 150px;
+  }
+  .section1 .slider .one p span {
+    font-size: 3em;
+    margin: 0 50px 0 0;
+  }
+}
+@media screen and (max-width: 1790px) {
+  body {
+    --width--: 1111px;
+  }
+  .section1 .upper-text {
+    min-height: 360px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 3.7em;
+  }
+  .section1 .content {
+    height: 561px;
+  }
+  body .section1 .content .text {
+    height: 310px;
+    width: 430px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 2.7em;
+  }
+  .section1 .slider .one {
+    min-height: 140px;
+  }
+  .section1 .slider .one p span {
+    font-size: 2.7em;
+  }
+}
+@media screen and (max-width: 1600px) {
+  body {
+    --width--: 1000px;
+  }
+  .section1 .upper-text {
+    min-height: 290px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 3em;
+  }
+  .section1 .content {
+    height: 505px;
+  }
+  body .section1 .content .text {
+    height: 230px;
+    width: 330px;
+    padding: 0 0 0 45px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 2.3em;
+  }
+  .section1 .slider .one {
+    min-height: 100px;
+  }
+  .section1 .slider .one p span {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-height: 900px) and (max-width: 1600px) {
+  body {
+    --width--: 855px;
+  }
+  nav {
+    height: 60px;
+  }
+  .section1 .upper-text {
+    min-height: 225px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 2.5em;
+  }
+  .section1 .content {
+    height: 432px;
+  }
+  body .section1 .content .text {
+    height: 205px;
+    width: 290px;
+    padding: 0 0 0 30px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 2em;
+  }
+  .section1 .slider .one p span {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1325px) {
+  body {
+    --width--: 950px;
+  }
+  .section1 .upper-text {
+    min-height: 300px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 2.9em;
+  }
+  .section1 .content {
+    height: 480px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 2.3em;
+  }
+  .section1 .slider .one {
+    min-height: 123px;
+  }
+  .section1 .slider .one p span {
+    font-size: 2.3em;
+  }
+}
+@media screen and (max-width: 1280px) {
+  body {
+    --width--: 850px;
+  }
+  .section1 .upper-text {
+    min-height: 260px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 2.9em;
+  }
+  .section1 .content {
+    height: 430px;
+  }
+  body .section1 .content .text {
+    height: 241px;
+    width: 318px;
+    padding: 0 0 0 45px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 2.1em;
+  }
+  .section1 .slider .one {
+    min-height: 100px;
+  }
+  .section1 .slider .one p span {
+    font-size: 2.1em;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    --width--: 750px;
+  }
+  .section1 .upper-text {
+    min-height: 225px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 2.3em;
+  }
+  .section1 .content {
+    height: 380px;
+  }
+  body .section1 .content .text {
+    height: 205px;
+    width: 275px;
+    padding: 0 0 0 35px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 1.8em;
+  }
+  .section1 .slider .one {
+    min-height: 80px;
+  }
+  .section1 .slider .one p span {
+    font-size: 1.8em;
+  }
+}
 
 /* section2 */
 header {
