@@ -1,5 +1,6 @@
 /* section1 */
 .section1 {
+  position: relative;
   overflow: visible;
 }
 .section1 .upper-text {
@@ -28,6 +29,7 @@
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0 0 50px black);
+  z-index: -1;
 }
 body.active .section1 .content .image {
   filter: drop-shadow(0 0 50px #0000003a);
