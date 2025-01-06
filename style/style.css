@@ -379,19 +379,19 @@ body .section1 .content .text h1 {
 }
 @media screen and (max-width: 440px) {
   .section1 .upper-text h1 {
-    font-size: 1.5em;
+    font-size: 1.58em;
   }
   .section1 .content {
     height: 195px;
   }
   .section1 .slider .one p span {
-    font-size: 0.8em;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
 }
 @media screen and (max-width: 430px) {
   .section1 .upper-text h1 {
-    font-size: 1.45em;
+    font-size: 1.55em;
   }
   .section1 .content {
     height: 190px;
@@ -403,7 +403,7 @@ body .section1 .content .text h1 {
 }
 @media screen and (max-width: 414px) {
   .section1 .upper-text h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
   }
   .section1 .content {
     height: 185px;
@@ -414,7 +414,7 @@ body .section1 .content .text h1 {
     padding: 0 0 0 24px;
   }
   body .section1 .content .text h1 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .section1 .slider .one p span {
     font-size: 12px;
@@ -423,16 +423,13 @@ body .section1 .content .text h1 {
 }
 @media screen and (max-width: 393px) {
   .section1 .upper-text h1 {
-    font-size: 1.4em;
-  }
-  .section1 .upper-text h1 br {
-    display: none;
+    font-size: 1.45em;
   }
   .section1 .content {
     height: 173px;
   }
   body .section1 .content .text h1 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .section1 .slider .one p span {
     font-size: 12px;
@@ -441,13 +438,10 @@ body .section1 .content .text h1 {
 }
 @media screen and (max-width: 375px) {
   .section1 .upper-text h1 {
-    font-size: 1.4em;
+    font-size: 1.38em;
   }
   .section1 .content {
     height: 162px;
-  }
-  .section1 .upper-text h1 br {
-    display: none;
   }
   body .section1 .content .text h1 {
     font-size: 1em;
@@ -460,6 +454,9 @@ body .section1 .content .text h1 {
 @media screen and (max-width: 320px) {
   .section1 .upper-text h1 {
     font-size: 1.2em;
+  }
+    .section1 .upper-text h1 br {
+    display: none;
   }
   .section1 .content {
     height: 140px;
