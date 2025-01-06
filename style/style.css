@@ -29,12 +29,13 @@
   justify-content: center;
   filter: drop-shadow(0 0 50px black);
   z-index: -1;
-  transition: .5s filter;
-
+  transition: 0.5s filter;
+  overflow: visible;
 }
 body.active .section1 .content .image {
   filter: drop-shadow(0 0 50px #0000003a);
-  transition: .5s filter;
+  transition: 0.5s filter;
+  overflow: visible;
 }
 .section1 .content .image img {
   height: auto;
@@ -51,12 +52,12 @@ body .section1 .content .text {
   background: #2121214d;
   backdrop-filter: blur(50px);
   box-shadow: 0 0 50px var(--black--);
-  transition: .5s background;
+  transition: 0.5s background;
 }
 body.active .section1 .content .text {
   background: #e7e7e765;
   box-shadow: 0 0 50px #0000003a;
-  transition: .5s background;
+  transition: 0.5s background;
 }
 body .section1 .content .text h1 {
   font-family: legquinne;
@@ -285,222 +286,37 @@ body .section1 .content .text h1 {
     font-size: 1.2em;
   }
   .section1 .slider .one {
-    min-height: 60px;
+    min-height: 70px;
   }
   .section1 .slider .one p span {
     font-size: 1.2em;
   }
 }
-
-/* @media screen and (max-width: 700px) {
+@media screen and (max-width: 915px) {
   body {
-    --width--: 500px;
+    --width--: 700px;
   }
   .section1 .upper-text h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
   .section1 .content {
-    height: 254px;
-  }
-}
-@media screen and (max-width: 600px) {
-  body {
-    --width--: 450px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.6em;
-  }
-  .section1 .content {
-    height: 230px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .section1 .content {
-    height: 230px;
-  }
-}
-@media screen and (max-width: 510px) {
-  body {
-    --width--: 470px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .content {
-    height: 220px;
-  }
-}
-@media screen and (max-width: 490px) {
-  body {
-    --width--: 440px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .content {
-    height: 220px;
-  }
-}
-@media screen and (max-width: 460px) {
-  body {
-    --width--: 420px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.6em;
-  }
-  .section1 .content {
-    height: 220px;
-  }
-}
-@media screen and (max-width: 440px) {
-  body {
-    --width--: 440px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.6em;
-  }
-  .section1 .content {
-    height: 205px;
+    height: 405px;
   }
   body .section1 .content .text {
-    height: 100px;
-    width: 160px;
-    padding: 0 0 0 20px;
-  }
-  body .section1 .content .text h1 {
-    font-size: 1.1em;
-  }
-  .section1 .slider .one {
-    min-height: 60px;
-  }
-  .section1 .slider .one p span {
-    font-size: 0.9em;
-    margin: 0 10px;
-  }
-}
-@media screen and (max-width: 428px) {
-  body {
-    --width--: 428px;
-  }
-}
-@media screen and (max-width: 415px) {
-  body {
-    --width--: 415px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.6em;
-  }
-  .section1 .upper-text h1 br {
-    display: none;
-  }
-  .section1 .content {
-    height: 190px;
-  }
-  body .section1 .content .text {
-    height: 100px;
-    width: 160px;
-    padding: 0 0 0 20px;
-  }
-  body .section1 .content .text h1 {
-    font-size: 1.1em;
-  }
-  .section1 .slider .one {
-    min-height: 60px;
-  }
-  .section1 .slider .one p span {
-    font-size: 0.9em;
-    margin: 0 10px;
-  }
-}
-@media screen and (max-width: 393px) {
-  body {
-    --width--: 393px;
-  }
-}
-@media screen and (max-width: 390px) {
-  body {
-    --width--: 390px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-
-  .section1 .content {
-    height: 170px;
-  }
-  .section1 .slider .one p span {
-    font-size: 0.9em;
-    margin: 0 5px;
-  }
-}
-@media screen and (max-width: 375px) {
-  body {
-    --width--: 375px;
-  }
-  .container {
-    padding: 0 20px;
-  }
-  .section1 .upper-text {
-    padding: 20px 0;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.5em;
-  }
-  .section1 .content {
-    height: 170px;
-  }
-  body .section1 .content .text {
-    height: 100px;
-    width: 160px;
-    padding: 0 0 0 20px;
-  }
-  body .section1 .content .text h1 {
-    font-size: 1.1em;
-  }
-  .section1 .slider .one {
-    min-height: 60px;
-  }
-  .section1 .slider .one p span {
-    font-size: 0.85em;
-    margin: 0 5px;
-  }
-}
-@media screen and (max-width: 360px) {
-  body {
-    --width--: 360px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.4em;
-  }
-  .section1 .content {
-    height: 160px;
-  }
-}
-@media screen and (max-width: 320px) {
-  body {
-    --width--: 320px;
-  }
-  .section1 .upper-text h1 {
-    font-size: 1.2em;
-  }
-  .section1 .content {
     height: 140px;
+    width: 200px;
+    padding: 0 0 0 34px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 1.2em;
+  }
+  .section1 .slider .one {
+    min-height: 70px;
   }
   .section1 .slider .one p span {
-    font-size: 0.7em;
-    margin: 0 5px;
+    font-size: 1.2em;
   }
-} */
-
+}
 @media screen and (max-width: 735px) {
   body {
     --width--: 500px;
@@ -570,10 +386,10 @@ body .section1 .content .text h1 {
   }
   .section1 .slider .one p span {
     font-size: 0.8em;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 430px) {
   .section1 .upper-text h1 {
     font-size: 1.45em;
   }
@@ -581,8 +397,8 @@ body .section1 .content .text h1 {
     height: 190px;
   }
   .section1 .slider .one p span {
-    font-size: 0.65em;
-    margin: 0 20px 0 0;
+    font-size: 12px;
+    margin: 0 10px 0 0;
   }
 }
 @media screen and (max-width: 414px) {
@@ -601,7 +417,7 @@ body .section1 .content .text h1 {
     font-size: 1em;
   }
   .section1 .slider .one p span {
-    font-size: 0.5em;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
 }
@@ -619,7 +435,7 @@ body .section1 .content .text h1 {
     font-size: 1em;
   }
   .section1 .slider .one p span {
-    font-size: 0.45em;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
 }
@@ -637,7 +453,7 @@ body .section1 .content .text h1 {
     font-size: 1em;
   }
   .section1 .slider .one p span {
-    font-size: 0.3em;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
 }
@@ -657,7 +473,7 @@ body .section1 .content .text h1 {
     font-size: 0.8em;
   }
   .section1 .slider .one p span {
-    font-size: 0.35em;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
 }
