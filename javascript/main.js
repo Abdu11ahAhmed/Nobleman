@@ -26,3 +26,17 @@ humberger.onclick = () => {
 };
 
 // Humberger Menu and Navigation Links
+
+// best seller in mounth
+
+const bestSeller = document.querySelector("#bestSeller");
+
+const currentDate = new Date();
+const lastMonthDate = new Date(
+  currentDate.getFullYear(),
+  currentDate.getMonth() - 1
+);
+const monthName = lastMonthDate.toLocaleString("default", { month: "long" });
+bestSeller.innerHTML = `Best Seller <br> in <span>${monthName}</span>`;
+
+// best seller in mounth

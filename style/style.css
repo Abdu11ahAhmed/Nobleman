@@ -115,6 +115,8 @@ header {
 header h2 {
   font-size: 2.5em;
   padding: 30px 0;
+  text-align: center;
+  letter-spacing: -0.05em;
 }
 .section2 {
   margin: 50px 0 0 0;
@@ -128,7 +130,6 @@ header h2 {
   padding: 20px 0;
 }
 .section2 .content .feature {
-  border: 1px solid var(--switcher--);
   height: 300px;
   width: 300px;
   padding: 45px 20px 20px 20px;
@@ -147,11 +148,112 @@ header h2 {
 .section2 .content .feature p,
 .section2 .content .feature h3 {
   text-align: center;
+  letter-spacing: -0.05em;
 }
 .section2 .content .feature p {
   padding: 10px 0;
 }
 /* section2 */
+
+/* section3 */
+.section3 {
+  margin: 50px auto 0 auto;
+}
+.section3 .content .top {
+  display: grid;
+  grid-template-columns: 25% 25% 1fr;
+}
+.section3 .content .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section3 .content .top div,
+.section3 .content .bottom div {
+  height: 300px;
+}
+.section3 .content .top .poster {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid var(--switcher--);
+}
+.section3 .content .top .poster .image {
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.section3 .content .top .poster .image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+.section3 .content .top .poster .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, black, transparent);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.section3 .content .top .poster .text h1 {
+  font-family: legquinne;
+  line-height: 100%;
+  overflow: visible;
+  letter-spacing: 0;
+  font-size: 2.5rem;
+  color: var(--pColor--);
+}
+.section3 .content .top .poster .text h1 span {
+  font-family: legquinne;
+  color: var(--color--);
+  text-decoration: 1px underline;
+}
+.section3 .content .top .card,
+.section3 .content .bottom .card {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid var(--switcher--);
+}
+.section3 .content .top .card .image,
+.section3 .content .bottom .card .image {
+  height: 199px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+.section3 .content .top .card .image img,
+.section3 .content .bottom .card .image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.section3 .content .top .card .text,
+.section3 .content .bottom .card .text {
+  height: 99.33px;
+  width: 100%;
+  padding: 10px;
+}
+.section3 .content .top .card .text img,
+.section3 .content .bottom .card .text img {
+  height: auto;
+  width: 25%;
+  object-fit: cover;
+}
+/* section3 */
 
 @media screen and (max-width: 1920px) and (max-height: 1100px) {
   body {
@@ -208,6 +310,19 @@ header h2 {
     font-size: 2.2em;
     padding: 30px 0;
   }
+
+  /* section3  */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 269px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 167px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 2.2rem;
+  }
 }
 @media screen and (max-width: 1768px) and (max-height: 992px) {
   body {
@@ -246,6 +361,19 @@ header h2 {
     width: 275px;
     padding: 45px 20px 20px 20px;
   }
+
+  /* section3  */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 247px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 145px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 1650px) {
   body {
@@ -277,12 +405,29 @@ header h2 {
   }
   /* section2  */
   header h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 30px 0;
   }
   .section2 .content .feature {
-    width: 275px;
-    padding: 45px 20px 20px 20px;
+    width: 249px;
+    height: 250px;
+    padding: 20px 10px 10px 10px;
+  }
+  .section2 .content .feature h3 {
+    font-size: 1rem;
+  }
+
+  /* .section3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 247px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 145px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 1440px) and (max-height: 900px) {
@@ -310,9 +455,17 @@ header h2 {
     font-size: 1.8em;
   }
   /* section2  */
+  header h2 {
+    font-size: 1.3em;
+    padding: 30px 0;
+  }
   .section2 .content .feature {
-    width: 275px;
-    padding: 45px 20px 20px 20px;
+    width: 249px;
+    height: 250px;
+    padding: 20px 10px 10px 10px;
+  }
+  .section2 .content .feature h3 {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1366px) and (max-height: 768px) {
@@ -340,6 +493,89 @@ header h2 {
     font-size: 1.5em;
   }
 }
+@media screen and (max-width: 1280px) {
+  body {
+    --width--: 700px;
+  }
+  .section1 .upper-text h1 {
+    font-size: 2.1em;
+  }
+  .section1 .content {
+    height: 355px;
+  }
+  body .section1 .content .text {
+    height: 160px;
+    width: 235px;
+    padding: 0 0 0 34px;
+  }
+  body .section1 .content .text h1 {
+    font-size: 1.5em;
+  }
+  .section1 .slider .one {
+    min-height: 70px;
+  }
+  .section1 .slider .one p span {
+    font-size: 1.5em;
+  }
+  /* section2  */
+  header h2 {
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+  .section2 .content .feature {
+    width: 218px;
+    height: 230px;
+    padding: 20px 10px 10px 10px;
+  }
+  .section2 .content .feature img {
+    width: 40px;
+  }
+  .section2 .content .feature p {
+    font-size: 15px;
+  }
+
+  /* .section3  */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 212px;
+  }
+  .section3 .content .top .card,
+  .section3 .content .bottom .card {
+    margin: 5px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 111px;
+  }
+  .section3 .content .top .card .text,
+  .section3 .content .bottom .card .text {
+    padding: 5px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 14px;
+  }
+  .section3 .content .top .card .text img,
+  .section3 .content .bottom .card .text img {
+    width: 35%;
+  }
+  .section3 .content .top .poster {
+    margin: 5px;
+  }
+  .section3 .content .top .poster .image {
+    display: unset;
+    margin: 5px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 1.2rem;
+  }
+  .section3 .content .top .poster .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 915px) {
   body {
     --width--: 700px;
@@ -348,7 +584,7 @@ header h2 {
     font-size: 2em;
   }
   .section1 .content {
-    height: 405px;
+    height: 356px;
   }
   body .section1 .content .text {
     height: 140px;
@@ -358,11 +594,25 @@ header h2 {
   body .section1 .content .text h1 {
     font-size: 1.2em;
   }
-  .section1 .slider .one {
-    min-height: 70px;
-  }
+
   .section1 .slider .one p span {
     font-size: 1.2em;
+  }
+  /* section2  */
+  header h2 {
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+  .section2 .content .feature {
+    width: 218px;
+    height: 230px;
+    padding: 20px 10px 10px 10px;
+  }
+  .section2 .content .feature img {
+    width: 40px;
+  }
+  .section2 .content .feature p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -375,6 +625,49 @@ header h2 {
   .section1 .content {
     height: 305px;
   }
+  /* section2  */
+  header h2 {
+    font-size: 1.1em;
+    padding: 20px 0;
+  }
+  .section2 .content {
+    gap: 10px;
+  }
+  .section2 .content .feature {
+    width: 192px;
+    height: 205px;
+    padding: 10px 10px 10px 10px;
+  }
+  .section2 .content .feature h3 {
+    font-size: 0.9rem;
+  }
+  .section2 .content .feature img {
+    width: 40px;
+  }
+  .section2 .content .feature p {
+    font-size: 13px;
+  }
+
+  /* .section3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 190px;
+  }
+  .section3 .content .top .card .text,
+  .section3 .content .bottom .card .text {
+    height: 87px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 101px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 12px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 735px) {
   body {
@@ -385,6 +678,57 @@ header h2 {
   }
   .section1 .content {
     height: 254px;
+  }
+  .section1 .slider .one p span {
+    margin: 0 20px 0 0;
+  }
+
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 250px;
+  }
+  .section3 .content .top {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Flexible rows */
+    grid-template-areas:
+      "poster poster" /* Poster spans full width on top */
+      "card1 card2"; /* Two cards below */
+  }
+  .section3 .content .top .poster {
+    grid-area: poster; /* Assign poster to the top area */
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+  }
+  .section3 .content .top .card:nth-child(1) {
+    grid-area: card1; /* First card on the left */
+  }
+  .section3 .content .top .card:nth-child(2) {
+    grid-area: card2; /* Second card on the right */
+  }
+  .section3 .content .top .card {
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+  }
+  .section3 .content .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 161px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 13px;
+  }
+  .section3 .content .top .card .text img,
+  .section3 .content .bottom .card .text img {
+    width: 25%;
+    margin: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -407,6 +751,16 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 1em;
     margin: 0 20px 0 0;
+  }
+
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 224px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 135px;
   }
 }
 @media screen and (max-width: 520px) {
@@ -456,13 +810,107 @@ header h2 {
     display: none;
   }
 }
+@media screen and (max-width: 440px) {
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 218px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 129px;
+  }
+}
+@media screen and (max-width: 436px) {
+  .section2 .content .feature {
+    border: 0;
+    width: 100%;
+  }
+  .section2 .content .feature h3 {
+    font-size: 1rem;
+  }
+  .section2 .content .feature p {
+    width: 60vw;
+    font-size: 14px;
+  }
+
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 214px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 125px;
+  }
+}
 @media screen and (max-width: 430px) {
   .section1 .upper-text h1 {
     font-size: 1.6em;
+  }
+
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 204px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 204px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 186px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 98px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 12px;
+  }
+  .section3 .content .top .card .text img,
+  .section3 .content .bottom .card .text img {
+    font-size: 12px;
+    width: 35%;
   }
 }
 @media screen and (max-width: 320px) {
   .section1 .upper-text h1 {
     font-size: 1.2em;
+  }
+
+  /* section 3 */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 171px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 85px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 12px;
+  }
+  .section3 .content .top .card .text img,
+  .section3 .content .bottom .card .text img {
+    font-size: 12px;
+    width: 35%;
   }
 }
