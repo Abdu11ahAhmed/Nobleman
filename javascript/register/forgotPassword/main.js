@@ -23,6 +23,7 @@ function isValidEmail(email) {
 
 submitBtn.addEventListener("click", function (event) {
   event.preventDefault();
+  let validInput = false;
   const validEmail = email.value.trim();
 
   if (email.value === "") {
@@ -32,6 +33,7 @@ submitBtn.addEventListener("click", function (event) {
     errrMessage.style.display = "flex";
     errMessage.innerHTML = `Please enter a valid email <div class="close"></div>`;
   } else {
+    validInput = true;
     errrMessage.style.display = "none";
     document.querySelector("form").reset();
     emailLabel.textContent = "Please Enter Your OTP Code";
@@ -87,6 +89,10 @@ submitBtn.addEventListener("click", function (event) {
         });
       }
     });
+
+    if ( validInput === false ) {
+      event.preventDefault()
+    }
   }
 });
 

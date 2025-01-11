@@ -62,7 +62,9 @@ function isValidEmail(email) {
 // valid email
 
 logintBtn.onclick = (e) => {
-  e.preventDefault();
+  let validEmail = false;
+  let validPassword = false;
+
   const logEmail = loginEmail.value.trim();
 
   if (logEmail === "" || loginPassword.value === "") {
@@ -74,6 +76,12 @@ logintBtn.onclick = (e) => {
   } else {
     errrMessage.style.display = "none";
     alert("Valid email address, Thank you");
+    validEmail = true;
+    validPassword = true;
+  }
+
+  if (validEmail === false || validPassword === false) {
+    e.preventDefault();
   }
 };
 
@@ -91,7 +99,11 @@ const signPasConf = document.querySelector("#signPasConf");
 const signBtn = document.querySelector("#signSubmitBtn");
 
 signBtn.onclick = (e) => {
-  e.preventDefault();
+  let validFName = false;
+  let validLName = false;
+  let validEmail = false;
+  let validPassword = false;
+  let validPasConf = false;
 
   if (
     signFName.value === "" ||
@@ -116,6 +128,21 @@ signBtn.onclick = (e) => {
         " " +
         signLName
     );
+    validFName = true;
+    validLName = true;
+    validEmail = true;
+    validPassword = true;
+    validPasConf = true;
+  }
+
+  if (
+    validFName === false ||
+    validLName === false ||
+    validEmail === false ||
+    validPassword === false ||
+    validPasConf === false
+  ) {
+    e.preventDefault();
   }
 };
 
