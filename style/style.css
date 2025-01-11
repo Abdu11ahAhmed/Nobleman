@@ -102,23 +102,26 @@ body .section1 .content .text h1 {
     transform: translateX(-100%);
   }
 }
-/* .section1 {
-}
-
-/* section2 */
+/* section1 */
 
 /* section2 */
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin: 50px 0 0 0;
 }
 header h2 {
   font-size: 2.5em;
-  padding: 30px 0;
-  text-align: center;
+  padding: 30px 5px;
+  text-align: left;
   letter-spacing: -0.05em;
+}
+.section2 header {
+  justify-content: center;
+}
+.section2 header h2 {
+  text-align: center;
 }
 .section2 .content {
   display: flex;
@@ -266,13 +269,17 @@ header h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
   background: var(--switcher--);
+  width: 50px;
 }
 .section3 .content .top .card .text ul li a,
 .section3 .content .bottom .card .text ul li a {
   overflow: hidden;
   transform: translateY(-2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
 }
 /* section3 */
 
@@ -312,6 +319,65 @@ header h2 {
   object-position: -10%;
 }
 /* section4  */
+
+/* section 5 */
+.section5 .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section5 .content .card {
+  position: relative;
+  height: 276px;
+  margin: 10px;
+  border: 1px solid var(--switcher--);
+  overflow: hidden;
+}
+.section5 .content .card .image {
+  height: 199px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+.section5 .content .card .image img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.section5 .content .card .text {
+  position: relative;
+  height: 75px;
+  width: 100%;
+  padding: 10px;
+}
+.section5 .content .card .text ul {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section5 .content .card .text ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--switcher--);
+  width: 50px;
+}
+.section5 .content .card .text ul li a {
+  overflow: hidden;
+  transform: translateY(-2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+/* section 5 */
 
 @media screen and (max-width: 1920px) and (max-height: 1100px) {
   body {
@@ -391,6 +457,14 @@ header h2 {
   .parallaxedImage {
     height: 755px;
   }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 244px;
+  }
+  .section5 .content .card .image {
+    height: 167px;
+  }
 }
 @media screen and (max-width: 1768px) and (max-height: 992px) {
   body {
@@ -450,6 +524,14 @@ header h2 {
   }
   .parallaxedImage {
     height: 670px;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 222px;
+  }
+  .section5 .content .card .image {
+    height: 145px;
   }
 }
 @media screen and (max-width: 1650px) {
@@ -520,6 +602,13 @@ header h2 {
   }
   .parallaxedImage {
     height: 670px;
+  }
+  /* section 5  */
+  .section5 .content .card {
+    height: 222px;
+  }
+  .section5 .content .card .image {
+    height: 145px;
   }
 }
 @media screen and (max-width: 1440px) and (max-height: 900px) {
@@ -669,6 +758,7 @@ header h2 {
   .section4 h2 {
     font-size: 1.1em;
     font-family: averta;
+    letter-spacing: -0.05em;
   }
   .section4 p {
     padding: 2px 0;
@@ -677,6 +767,24 @@ header h2 {
   .parallaxedImage {
     height: 500px;
     margin: 50px 5px;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 188px;
+    margin: 5px;
+  }
+  .section5 .content .card .image {
+    height: 111px;
+  }
+  .section5 .content .card .text {
+    padding: 5px;
+  }
+  .section5 .content .card .text p {
+    font-size: 14px;
+  }
+  .section5 .content .card .text ul {
+    padding: 5px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -780,6 +888,25 @@ header h2 {
   .parallaxedImage {
     height: 500px;
     margin: 50px 5px;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 188px;
+    margin: 5px;
+  }
+  .section5 .content .card .image {
+    height: 111px;
+  }
+  .section5 .content .card .text {
+    padding: 5px;
+  }
+  .section5 .content .card .text p {
+    font-size: 14px;
+  }
+  .section5 .content .card .text ul {
+    padding: 5px;
+    bottom: 10px;
   }
 }
 @media screen and (max-width: 915px) {
@@ -890,6 +1017,17 @@ header h2 {
   .parallaxedImage {
     height: 400px;
   }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 178px;
+  }
+  .section5 .content .card .image {
+    height: 101px;
+  }
+  .section5 .content .card .text p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 735px) {
   body {
@@ -969,6 +1107,20 @@ header h2 {
   .parallaxedImage {
     height: 300px;
   }
+
+  /* section 5  */
+  .section5 .content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section5 .content .card {
+    height: 238px;
+  }
+  .section5 .content .card .image {
+    height: 161px;
+  }
+  .section5 .content .card .text p {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 600px) {
   body {
@@ -999,6 +1151,14 @@ header h2 {
   }
   .section3 .content .top .card .image,
   .section3 .content .bottom .card .image {
+    height: 135px;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 201px;
+  }
+  .section5 .content .card .image {
     height: 135px;
   }
 }
@@ -1059,6 +1219,14 @@ header h2 {
   .section3 .content .bottom .card .image {
     height: 129px;
   }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 195px;
+  }
+  .section5 .content .card .image {
+    height: 129px;
+  }
 }
 @media screen and (max-width: 436px) {
   .section2 .content .feature {
@@ -1087,6 +1255,14 @@ header h2 {
   .parallaxedImage {
     height: 200px;
   }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 191px;
+  }
+  .section5 .content .card .image {
+    height: 125px;
+  }
 }
 @media screen and (max-width: 430px) {
   .section1 .upper-text h1 {
@@ -1102,15 +1278,12 @@ header h2 {
   .section3 .content .bottom .card .image {
     height: 115px;
   }
-}
-@media screen and (max-width: 400px) {
-  /* section 3 */
-  .section3 .content .top div,
-  .section3 .content .bottom div {
-    height: 204px;
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 181px;
   }
-  .section3 .content .top .card .image,
-  .section3 .content .bottom .card .image {
+  .section5 .content .card .image {
     height: 115px;
   }
 }
@@ -1132,6 +1305,17 @@ header h2 {
   .section3 .content .bottom .card .text img {
     font-size: 12px;
     width: 35%;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 175px;
+  }
+  .section5 .content .card .image {
+    height: 98px;
+  }
+  .section5 .content .card .text p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1156,5 +1340,13 @@ header h2 {
   .section3 .content .bottom .card .text img {
     font-size: 12px;
     width: 35%;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 162px;
+  }
+  .section5 .content .card .image {
+    height: 85px;
   }
 }
