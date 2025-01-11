@@ -784,7 +784,8 @@ header h2 {
     font-size: 14px;
   }
   .section5 .content .card .text ul {
-    padding: 5px;
+    padding: 0 5px;
+    bottom: 5;
   }
 }
 @media screen and (max-width: 1280px) {
