@@ -107,6 +107,7 @@ body .section1 .content .text h1 {
 
 /* section2 */
 
+/* section2 */
 header {
   display: flex;
   align-items: center;
@@ -182,7 +183,7 @@ header h2 {
   overflow: hidden;
 }
 .section3 .content .top .poster .image img {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   margin: 0;
@@ -206,11 +207,11 @@ header h2 {
   overflow: visible;
   letter-spacing: 0;
   font-size: 2.5rem;
-  color: var(--pColor--);
+  color: white;
 }
 .section3 .content .top .poster .text h1 span {
   font-family: legquinne;
-  color: var(--color--);
+  color: white;
   text-decoration: 1px underline;
 }
 .section3 .content .top .card,
@@ -279,12 +280,13 @@ header h2 {
 .section4 {
   min-height: 200px;
   display: grid;
-  margin: 100px 0 0 0;
+  margin: 100px 10px 0 10px;
   grid-template-columns: 40% 1fr;
+  padding: 0 10px;
 }
 .section4 h2 {
-  color: #fff;
-  font-size: 3em;
+  color: var(--color--);
+  font-size: 2.5em;
   line-height: 120%;
   font-family: graphire;
   font-weight: 100;
@@ -292,17 +294,14 @@ header h2 {
 }
 .section4 p {
   padding: 10px 0;
-  font-size: 1.2em;
 }
 .section4 p span {
   font-size: 1.2em;
   font-family: tiny;
   padding: 0 10px;
 }
-/* section4  */
-
 .parallaxedImage {
-  margin: 50px 0;
+  margin: 50px 10px;
   height: 800px;
   overflow: hidden;
 }
@@ -338,6 +337,8 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 2.3em;
   }
+
+  /* section 2 */
 }
 @media screen and (max-width: 1768px) {
   body {
@@ -382,6 +383,14 @@ header h2 {
   .section3 .content .top .poster .text h1 {
     font-size: 2.2rem;
   }
+
+  /* section4  */
+  .section4 h2 {
+    font-size: 2.2em;
+  }
+  .parallaxedImage {
+    height: 755px;
+  }
 }
 @media screen and (max-width: 1768px) and (max-height: 992px) {
   body {
@@ -411,6 +420,7 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 2em;
   }
+
   /* section2  */
   header h2 {
     font-size: 2em;
@@ -432,6 +442,14 @@ header h2 {
   }
   .section3 .content .top .poster .text h1 {
     font-size: 1.5rem;
+  }
+
+  /* section4  */
+  .section4 h2 {
+    font-size: 2em;
+  }
+  .parallaxedImage {
+    height: 670px;
   }
 }
 @media screen and (max-width: 1650px) {
@@ -462,6 +480,7 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 2em;
   }
+
   /* section2  */
   header h2 {
     font-size: 1.5em;
@@ -488,6 +507,20 @@ header h2 {
   .section3 .content .top .poster .text h1 {
     font-size: 1.5rem;
   }
+
+  /* section4  */
+  .section4 {
+    min-height: 161px;
+  }
+  .section4 h2 {
+    font-size: 1.5em;
+  }
+  .section4 p {
+    padding: 2px 0;
+  }
+  .parallaxedImage {
+    height: 670px;
+  }
 }
 @media screen and (max-width: 1440px) and (max-height: 900px) {
   body {
@@ -513,6 +546,7 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 1.8em;
   }
+
   /* section2  */
   header h2 {
     font-size: 1.3em;
@@ -525,6 +559,20 @@ header h2 {
   }
   .section2 .content .feature h3 {
     font-size: 1rem;
+  }
+
+  /* section4  */
+  .section4 {
+    min-height: 161px;
+  }
+  .section4 h2 {
+    font-size: 1.3em;
+  }
+  .section4 p {
+    padding: 2px 0;
+  }
+  .parallaxedImage {
+    height: 610px;
   }
 }
 @media screen and (max-width: 1366px) and (max-height: 768px) {
@@ -551,11 +599,11 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 1.5em;
   }
+
   /* section2  */
   header h2 {
     font-size: 1.2em;
     padding: 20px 0;
-    border: 1px solid red;
   }
   .section2 .content .feature {
     width: 218px;
@@ -609,6 +657,26 @@ header h2 {
     width: 100%;
     object-fit: cover;
     margin: 0;
+  }
+
+  /* section4  */
+  .section4 {
+    min-height: 161px;
+    display: grid;
+    margin: 50px 5px;
+    grid-template-columns: 30% 1fr;
+  }
+  .section4 h2 {
+    font-size: 1.1em;
+    font-family: averta;
+  }
+  .section4 p {
+    padding: 2px 0;
+    font-size: 14px;
+  }
+  .parallaxedImage {
+    height: 500px;
+    margin: 50px 5px;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -635,11 +703,11 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 1.5em;
   }
+
   /* section2  */
   header h2 {
     font-size: 1.2em;
     padding: 20px 0;
-    border: 1px solid red;
   }
   .section2 .content .feature {
     width: 218px;
@@ -694,6 +762,25 @@ header h2 {
     object-fit: cover;
     margin: 0;
   }
+
+  /* section4  */
+  .section4 {
+    min-height: 161px;
+    grid-template-columns: 30% 1fr;
+    margin: 50px 5px;
+  }
+  .section4 h2 {
+    font-family: averta;
+    font-size: 1.1em;
+  }
+  .section4 p {
+    padding: 2px 0;
+    font-size: 14px;
+  }
+  .parallaxedImage {
+    height: 500px;
+    margin: 50px 5px;
+  }
 }
 @media screen and (max-width: 915px) {
   body {
@@ -713,13 +800,13 @@ header h2 {
   body .section1 .content .text h1 {
     font-size: 1.2em;
   }
-
   .section1 .slider .one p span {
     font-size: 1.2em;
   }
+
   /* section2  */
   header h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 20px 0;
   }
   .section2 .content .feature {
@@ -744,6 +831,7 @@ header h2 {
   .section1 .content {
     height: 305px;
   }
+
   /* section2  */
   header h2 {
     font-size: 1.1em;
@@ -786,6 +874,21 @@ header h2 {
   }
   .section3 .content .top .poster .text h1 {
     font-size: 1rem;
+  }
+
+  /* section4  */
+  .section4 {
+    min-height: 120px;
+  }
+  .section4 h2 {
+    font-size: 1.1em;
+  }
+  .section4 p {
+    padding: 2px 0;
+    font-size: 13px;
+  }
+  .parallaxedImage {
+    height: 400px;
   }
 }
 @media screen and (max-width: 735px) {
@@ -848,6 +951,23 @@ header h2 {
   .section3 .content .bottom .card .text img {
     width: 25%;
     margin: 0;
+  }
+
+  /* section4  */
+  .section4 {
+    min-height: 120px;
+    display: block;
+  }
+  .section4 h2 {
+    font-size: 1.1em;
+    line-height: normal;
+    padding: 10px 0;
+  }
+  .section4 p {
+    padding: 2px 0;
+  }
+  .parallaxedImage {
+    height: 300px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -961,6 +1081,11 @@ header h2 {
   .section3 .content .top .card .image,
   .section3 .content .bottom .card .image {
     height: 125px;
+  }
+
+  /* section4  */
+  .parallaxedImage {
+    height: 200px;
   }
 }
 @media screen and (max-width: 430px) {
