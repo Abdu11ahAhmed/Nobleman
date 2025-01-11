@@ -111,15 +111,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 50px 0 0 0;
 }
 header h2 {
   font-size: 2.5em;
   padding: 30px 0;
   text-align: center;
   letter-spacing: -0.05em;
-}
-.section2 {
-  margin: 50px 0 0 0;
 }
 .section2 .content {
   display: flex;
@@ -156,9 +154,6 @@ header h2 {
 /* section2 */
 
 /* section3 */
-.section3 {
-  margin: 50px auto 0 auto;
-}
 .section3 .content .top {
   display: grid;
   grid-template-columns: 25% 25% 1fr;
@@ -243,6 +238,7 @@ header h2 {
 }
 .section3 .content .top .card .text,
 .section3 .content .bottom .card .text {
+  position: relative;
   height: 99.33px;
   width: 100%;
   padding: 10px;
@@ -253,7 +249,70 @@ header h2 {
   width: 25%;
   object-fit: cover;
 }
+.section3 .content .top .card .text ul,
+.section3 .content .bottom .card .text ul {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section3 .content .top .card .text ul li:nth-child(2),
+.section3 .content .bottom .card .text ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: var(--switcher--);
+}
+.section3 .content .top .card .text ul li a,
+.section3 .content .bottom .card .text ul li a {
+  overflow: hidden;
+  transform: translateY(-2px);
+}
 /* section3 */
+
+/* section4 */
+.section4 {
+  min-height: 200px;
+  display: grid;
+  margin: 100px 0 0 0;
+  grid-template-columns: 40% 1fr;
+}
+.section4 h2 {
+  color: #fff;
+  font-size: 3em;
+  line-height: 120%;
+  font-family: graphire;
+  font-weight: 100;
+  overflow: hidden;
+}
+.section4 p {
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+.section4 p span {
+  font-size: 1.2em;
+  font-family: tiny;
+  padding: 0 10px;
+}
+/* section4  */
+
+.parallaxedImage {
+  margin: 50px 0;
+  height: 800px;
+  overflow: hidden;
+}
+.parallaxedImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: -10%;
+}
+/* section4  */
 
 @media screen and (max-width: 1920px) and (max-height: 1100px) {
   body {
@@ -492,6 +551,65 @@ header h2 {
   .section1 .slider .one p span {
     font-size: 1.5em;
   }
+  /* section2  */
+  header h2 {
+    font-size: 1.2em;
+    padding: 20px 0;
+    border: 1px solid red;
+  }
+  .section2 .content .feature {
+    width: 218px;
+    height: 230px;
+    padding: 20px 10px 10px 10px;
+  }
+  .section2 .content .feature img {
+    width: 40px;
+  }
+  .section2 .content .feature p {
+    font-size: 15px;
+  }
+
+  /* .section3  */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 212px;
+  }
+  .section3 .content .top .card,
+  .section3 .content .bottom .card {
+    margin: 5px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 111px;
+  }
+  .section3 .content .top .card .text,
+  .section3 .content .bottom .card .text {
+    padding: 5px;
+  }
+  .section3 .content .top .card .text p,
+  .section3 .content .bottom .card .text p {
+    font-size: 14px;
+  }
+  .section3 .content .top .card .text img,
+  .section3 .content .bottom .card .text img {
+    width: 35%;
+  }
+  .section3 .content .top .poster {
+    margin: 5px;
+  }
+  .section3 .content .top .poster .image {
+    display: unset;
+    margin: 5px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 1.2rem;
+  }
+  .section3 .content .top .poster .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 1280px) {
   body {
@@ -521,6 +639,7 @@ header h2 {
   header h2 {
     font-size: 1.2em;
     padding: 20px 0;
+    border: 1px solid red;
   }
   .section2 .content .feature {
     width: 218px;
