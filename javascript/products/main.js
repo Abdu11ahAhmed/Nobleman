@@ -34,15 +34,71 @@ let allLis = document.querySelectorAll(".smallImages li");
 let allLisArray = Array.from(allLis);
 
 allLisArray.forEach((e) => {
-  e.addEventListener("click", (e)=> {
-    allLisArray.forEach((e)=> {
+  e.addEventListener("click", (e) => {
+    allLisArray.forEach((e) => {
       e.classList.remove("active");
-    })
+    });
     e.currentTarget.classList.add("active");
     let img = e.currentTarget.querySelector("img").getAttribute("src");
     mainImage.setAttribute("src", img);
-  })
+  });
 });
 
-console.log(allLis);
+let carName = document.querySelector("#carName").innerText;
+mainImage.setAttribute("alt", carName);
+
+const imageSlide = document.querySelectorAll(".smallImages li img");
+
+if (imageSlide.length >= 1) {
+  imageSlide[0].setAttribute("alt", `${carName} Main`);
+}
+if (imageSlide.length >= 2) {
+  imageSlide[1].setAttribute("alt", `${carName} Front`);
+}
+if (imageSlide.length >= 3) {
+  imageSlide[2].setAttribute("alt", `${carName} back`);
+}
+if (imageSlide.length >= 4) {
+  imageSlide[3].setAttribute("alt", `${carName} Right Side`);
+}
+if (imageSlide.length >= 5) {
+  imageSlide[4].setAttribute("alt", `${carName} left Side`);
+}
+
+console.log(imageSlide);
+
 // open images from gallery
+
+// quantity Buttons
+
+let decrease = document.querySelector("#decrease");
+let quantity = document.querySelector("#quantity");
+let increase = document.querySelector("#increase");
+
+increase.addEventListener("click", () => {
+  quantity.innerText++;
+});
+decrease.addEventListener("click", () => {
+  quantity.innerText--;
+
+  if (quantity.innerText < 1) {
+    quantity.innerText = 1;
+  }
+});
+// quantity Buttons
+
+// color plaets
+
+let colors = document.querySelectorAll(".palet li");
+let colorsArray = Array.from(colors);
+
+colorsArray.forEach((e) => {
+  e.addEventListener("click", (e) => {
+    colorsArray.forEach((e) => {
+      e.classList.remove("active");
+    });
+    e.currentTarget.classList.add("active");
+  });
+});
+
+// color plaets

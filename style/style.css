@@ -31,13 +31,11 @@
   z-index: -1;
   transition: 0.5s filter;
   overflow: visible;
-  transition: 0.5s box-shadow;
 }
 body.active .section1 .content .image {
   filter: drop-shadow(0 0 50px #0000003a);
   transition: 0.5s filter;
   overflow: visible;
-  transition: 0.5s box-shadow;
 }
 .section1 .content .image img {
   height: auto;
@@ -404,7 +402,34 @@ header h2 {
     font-size: 2.3em;
   }
 
-  /* section 2 */
+  /* section3  */
+  .section3 .content .top div,
+  .section3 .content .bottom div {
+    height: 269px;
+  }
+  .section3 .content .top .card .image,
+  .section3 .content .bottom .card .image {
+    height: 167px;
+  }
+  .section3 .content .top .poster .text h1 {
+    font-size: 2.2rem;
+  }
+
+  /* section4  */
+  .section4 h2 {
+    font-size: 2.2em;
+  }
+  .parallaxedImage {
+    height: 755px;
+  }
+
+  /* section 5  */
+  .section5 .content .card {
+    height: 244px;
+  }
+  .section5 .content .card .image {
+    height: 167px;
+  }
 }
 @media screen and (max-width: 1768px) {
   body {
@@ -876,7 +901,7 @@ header h2 {
   .section4 {
     min-height: 161px;
     grid-template-columns: 30% 1fr;
-    margin: 50px 5px;
+    margin: 50px 0px;
   }
   .section4 h2 {
     font-family: averta;
@@ -888,7 +913,7 @@ header h2 {
   }
   .parallaxedImage {
     height: 500px;
-    margin: 50px 5px;
+    margin: 50px 0px;
   }
 
   /* section 5  */
