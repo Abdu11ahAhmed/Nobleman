@@ -187,6 +187,49 @@
   background: #000;
 }
 
+section {
+  text-align: center;
+  margin: 100px 0 0 0;
+}
+section h2 {
+  padding: 10px 0;
+}
+
+/* section2  */
+.section2 {
+  min-height: 400px;
+  margin: 200px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.section2 .text {
+  padding: 20px 50px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.section2:nth-child(3) .text,
+.section2:nth-child(5) .text {
+  padding: 20px 50px 20px 0;
+}
+.section2 .text h2 {
+  padding: 10px 0;
+}
+.section2 .image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* section2  */
+
 @media screen and (max-width: 1920px) and (max-height: 1100px),
   screen and (max-width: 1768px) {
   body {
