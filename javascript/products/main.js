@@ -64,9 +64,6 @@ if (imageSlide.length >= 4) {
 if (imageSlide.length >= 5) {
   imageSlide[4].setAttribute("alt", `${carName} left Side`);
 }
-
-console.log(imageSlide);
-
 // open images from gallery
 
 // quantity Buttons
