@@ -99,16 +99,17 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.3;
-  border: 1px solid var(--color--);
+  color: rgba(193, 193, 205);
+  border: 1px solid rgba(193, 193, 205);
   cursor: pointer;
   user-select: none;
   font-size: 14px;
   transition: 0.5s border, 0.5s opacity;
 }
 .content .tabs li.active {
-  opacity: 1;
-  transition: 0.5s border, 0.5s opacity;
+  color: var(--color--);
+  border: 1px solid var(--color--);
+  transition: 0.5s border, 0.5s color;
 }
 .content form {
   position: relative;
